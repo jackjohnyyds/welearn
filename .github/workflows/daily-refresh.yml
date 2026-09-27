@@ -1,0 +1,18 @@
+name: Daily Refresh at 8:00
+on:
+  schedule:
+    - cron: '0 0 * * *'  # UTC 0:00 = 北京时间 8:00
+  workflow_dispatch:
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Trigger Pages rebuild
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          echo "# Daily refresh $(date -u '+%Y-%m-%d %H:%M UTC')" >> README.md
+          git add README.md
+          git commit -m "chore: daily 8am refresh" || echo "nothing to commit"
+          git push
