@@ -189,7 +189,7 @@ document.querySelectorAll('[data-music]').forEach(t=>{
   t.onclick=()=>{
     document.querySelectorAll('[data-music]').forEach(x=>x.classList.remove('active'));
     t.classList.add('active');
-    ['netease','qq','free'].forEach(k=>document.getElementById('music-'+k).style.display='none');
+    ['netease','qq'].forEach(k=>document.getElementById('music-'+k).style.display='none');
     document.getElementById('music-'+t.dataset.music).style.display='block';
   };
 });
