@@ -401,6 +401,37 @@ async function loadMedical(){
     div.onclick=()=>openChineseCase(c);
     list.appendChild(div);
   });
+  const yiigle=[
+    {t:'抗PLA2R抗体阳性肾病综合征合并膀胱肿瘤1例',cat:'肾脏病·肿瘤',url:'https://cmcr.yiigle.com/index'},
+    {t:'高龄重度肥胖合并妊娠高危并发症急诊剖宫产护理',cat:'妇产科·护理',url:'https://cmcr.yiigle.com/index'},
+    {t:'成人骨硬化症1例',cat:'骨科·罕见病',url:'https://cmcr.yiigle.com/index'},
+    {t:'ANCA相关性血管炎合并肺毛霉病1例',cat:'风湿免疫·感染',url:'https://cmcr.yiigle.com/index'},
+    {t:'产前诊断母体高苯丙氨酸血症致胎儿颅脑发育不良',cat:'产前诊断·遗传病',url:'https://cmcr.yiigle.com/index'},
+    {t:'呼吸困难—肺部马赛克征—肺动脉高压',cat:'呼吸·心血管',url:'https://cmcr.yiigle.com/index'},
+    {t:'双肺弥漫性病变伴多器官损害',cat:'呼吸·危重症',url:'https://cmcr.yiigle.com/index'},
+  ];
+  yiigle.forEach((i,idx)=>{
+    const colors=['c1','c2','c3','c4'];
+    const div=document.createElement('div');
+    div.className='card';
+    div.innerHTML=`<span class="badge ${colors[idx%4]}">中华医学病例 · ${i.cat}</span><h3>${i.t}</h3><p>点击跳转病例详情</p>`;
+    div.onclick=()=>{addHistory(i.t,i.url);window.open(i.url,'_blank')};
+    list.appendChild(div);
+  });
+  const dxy=[
+    {t:'胸痛待查：急性冠脉综合征？',cat:'心血管·胸痛',url:'https://3g.dxy.cn/bbs/case'},
+    {t:'发热伴皮疹：登革热？麻疹？',cat:'感染·发热待查',url:'https://3g.dxy.cn/bbs/case'},
+    {t:'腹痛待查：急腹症鉴别',cat:'普外科·急腹症',url:'https://3g.dxy.cn/bbs/case'},
+    {t:'意识障碍：脑血管意外？代谢性？',cat:'神经·急诊',url:'https://3g.dxy.cn/bbs/case'},
+  ];
+  dxy.forEach((i,idx)=>{
+    const colors=['c1','c2','c3','c4'];
+    const div=document.createElement('div');
+    div.className='card';
+    div.innerHTML=`<span class="badge ${colors[(idx+2)%4]}">丁香园病例 · ${i.cat}</span><h3>${i.t}</h3><p>点击跳转病例讨论</p>`;
+    div.onclick=()=>{addHistory(i.t,i.url);window.open(i.url,'_blank')};
+    list.appendChild(div);
+  });
   try{
     const r=await fetch(rss2json('https://casereports.bmj.com/rss/current.xml'));
     const d=await r.json();
