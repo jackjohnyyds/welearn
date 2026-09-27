@@ -235,11 +235,26 @@ function openDetail(title, body, sourceUrl, isEnglish){
 function closeDetail(){document.getElementById('mask').classList.remove('show')}
 
 async function loadArticles(){
-  const feeds=[['https://feeds.npr.org/1001/rss.xml','NPR','c1'],['https://www.globaltimes.cn/rss/outbrain.xml','Global Times','c2']];
+  const englio=[
+    {t:"I followed Beatrix Potter's routine (cosy day in English Countryside)",zh:'我模仿碧雅翠丝·波特的日常（英国乡村惬意一天）',cat:'文化',src:'englio·B1',link:'https://englio.ai/explore'},
+    {t:"Should we pay more for chocolate? 6 Minute English",zh:'我们该为巧克力付更多钱吗？6分钟英语',cat:'经济',src:'englio·B1',link:'https://englio.ai/explore'},
+    {t:"The US-China Race to Establish Permanent Moon Bases",zh:'中美争夺建立永久月球基地',cat:'科技',src:'englio·C1',link:'https://englio.ai/explore'},
+    {t:"Finding Pi in Randomness: Three Mathematical Methods",zh:'在随机性中寻找圆周率：三种数学方法',cat:'科技',src:'englio·B2',link:'https://englio.ai/explore'},
+    {t:"GPS Spoofing in the Strait of Hormuz: A Navigation Crisis",zh:'霍尔木兹海峡GPS欺骗：导航危机',cat:'科技',src:'englio·C1',link:'https://englio.ai/explore'},
+    {t:"Dolphin Stranding Mystery Solved: Orcas as Culprits",zh:'海豚搁浅之谜破解：虎鲸是元凶',cat:'环境',src:'englio·B1',link:'https://englio.ai/explore'},
+    {t:"NASA Targets April 1 for Artemis II Moon Mission",zh:'NASA计划4月1日发射阿耳忒弥斯二号登月任务',cat:'科技',src:'englio·B2',link:'https://englio.ai/explore'},
+    {t:"Raccoons Solve Puzzles for Fun: Study Reveals Information Foraging",zh:'浣熊为乐趣解谜：研究揭示信息觅食行为',cat:'科技',src:'englio·B2',link:'https://englio.ai/explore'},
+    {t:"The Mystery of the Runaway Black Hole",zh:'失控黑洞之谜',cat:'科技',src:'englio·C1',link:'https://englio.ai/explore'},
+    {t:"AI and Robots Revolutionize Biological Experimentation",zh:'AI与机器人革新生物实验',cat:'科技',src:'englio·B2',link:'https://englio.ai/explore'},
+    {t:"China Approves First Commercial Brain Implant for Spinal Cord Injuries",zh:'中国批准首个治疗脊髓损伤的商用脑植入物',cat:'健康',src:'englio·C1',link:'https://englio.ai/explore'},
+    {t:"Record Winter Heat in the U.S. and Climate Change Impacts",zh:'美国冬季创纪录高温与气候变化影响',cat:'环境',src:'englio·B1',link:'https://englio.ai/explore'},
+  ];
+  const feeds=[['https://feeds.npr.org/1001/rss.xml','NPR','c1']];
   const all=[];
+  englio.forEach(a=>all.push({title:a.t,zh:a.zh,cat:a.cat,source:a.src,c:'c3',link:a.link,desc:''}));
   for(const [url,name,c] of feeds){
     try{const r=await fetch(rss2json(url));const d=await r.json();
-      (d.items||[]).slice(0,8).forEach(i=>all.push({title:i.title,desc:i.description||'',source:name,c,link:i.link}));
+      (d.items||[]).slice(0,5).forEach(i=>all.push({title:i.title,zh:'',cat:'',desc:i.description||'',source:name,c,link:i.link}));
     }catch(e){}
   }
   document.querySelector('#page-articles .loading').style.display='none';
@@ -247,7 +262,9 @@ async function loadArticles(){
   all.slice(0,15).forEach(a=>{
     const div=document.createElement('div');
     div.className='card';
-    div.innerHTML=`<span class="badge ${a.c}">${a.source}</span><h3>${esc(a.title)}</h3><p>${esc(strip(a.desc))}</p>`;
+    const badge = a.cat ? `<span class="badge c3">${a.cat}</span>` : `<span class="badge ${a.c}">${a.source}</span>`;
+    const zh = a.zh ? `<p style="color:#4A90D9;font-weight:500">${a.zh}</p>` : '';
+    div.innerHTML=`${badge}<h3>${esc(a.title)}</h3>${zh}<p>${esc(strip(a.desc))}</p>`;
     div.onclick=()=>openDetail(a.title,strip(a.desc)||a.title,a.link,true);
     list.appendChild(div);
   });
