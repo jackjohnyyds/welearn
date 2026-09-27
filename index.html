@@ -128,11 +128,9 @@ body{
 <div class="page" id="page-listening"><div class="loading">正在抓取听力…</div><div id="listening-list"></div></div>
 <div class="page" id="page-music">
   <div class="subtabs">
-    <div class="subtab active" data-music="netease">🎵 网易云</div>
-    <div class="subtab" data-music="qq">🎧 QQ音乐</div>
+    <div class="subtab active" data-music="netease">🎵 网易云热歌</div>
   </div>
   <div id="music-netease"></div>
-  <div id="music-qq" style="display:none"></div>
 </div>
 <div class="page" id="page-medical"><div class="loading">正在加载病例库…</div><div id="medical-list"></div></div>
 <div class="page" id="page-finance">
@@ -311,26 +309,17 @@ async function loadListening(){
 }
 
 const neteaseSongs=[
-  {n:'晴天',a:'周杰伦',id:'186016'},{n:'海阔天空',a:'Beyond',id:'347235'},
-  {n:'平凡之路',a:'朴树',id:'1262786'},{n:'夜曲',a:'周杰伦',id:'185806'},
-  {n:'稻香',a:'周杰伦',id:'185964'},{n:'成都',a:'赵雷',id:'413831496'},
-  {n:'南山南',a:'马頔',id:'2941861'},{n:'贝加尔湖畔',a:'李健',id:'288165'},
-  {n:'光辉岁月',a:'Beyond',id:'347231'},{n:'起风了',a:'买辣椒也用券',id:'569213220'},
-  {n:'芒种',a:'音阙诗听',id:'1357978253'},{n:'少年',a:'梦然',id:'1347352358'},
-  {n:'光年之外',a:'邓紫棋',id:'418603895'},{n:'孤勇者',a:'陈奕迅',id:'1901376670'},
-  {n:'忐忑',a:'龚琳娜',id:'167876'},
+  {n:'晴天',a:'周杰伦'},{n:'海阔天空',a:'Beyond'},
+  {n:'平凡之路',a:'朴树'},{n:'夜曲',a:'周杰伦'},
+  {n:'稻香',a:'周杰伦'},{n:'成都',a:'赵雷'},
+  {n:'南山南',a:'马頔'},{n:'贝加尔湖畔',a:'李健'},
+  {n:'光辉岁月',a:'Beyond'},{n:'起风了',a:'买辣椒也用券'},
+  {n:'芒种',a:'音阙诗听'},{n:'少年',a:'梦然'},
+  {n:'光年之外',a:'邓紫棋'},{n:'孤勇者',a:'陈奕迅'},
+  {n:'漠河舞厅',a:'柳爽'},{n:'海底',a:'一支榴莲'},
+  {n:'大风吹',a:'王赫野'},{n:'踏山河',a:'是七叔呢'},
 ];
-const qqSongs=[
-  {n:'漠河舞厅',a:'柳爽',id:'003aRm513yWjOc'},{n:'海底',a:'一支榴莲',id:'002FhvGc2eXQxI'},
-  {n:'大风吹',a:'王赫野',id:'0028W84y2G5g9M'},{n:'可可托海的牧羊人',a:'王琪',id:'002bN3l82Jj5nR'},
-  {n:'白月光与朱砂痣',a:'大籽',id:'003d9X4m3HhFqK'},{n:'踏山河',a:'是七叔呢',id:'001Z6XWm3vR8oG'},
-  {n:'燕无歇',a:'蒋雪儿',id:'001lZ4rX2BqKtP'},{n:'失焦',a:'木清',id:'004aB7cO3wLmNp'},
-  {n:'雾里',a:'姚六一',id:'003xN8qG3pEeRr'},{n:'分身',a:'刘至佳',id:'002kL9zL3GdXyQ'},
-  {n:'来迟',a:'戴羽彤',id:'003oP5iD3sWvTt'},{n:'指纹',a:'胡歌',id:'001EBa1z2YxQoW'},
-  {n:'红尘客栈',a:'周杰伦',id:'001JQ5lV3eRwTz'},{n:'我落泪情绪零碎',a:'周杰伦',id:'004bN7mK3uLdEs'},
-  {n:'兰亭序',a:'周杰伦',id:'001JQ5lV3eRwTz'},
-];
-function renderMusic(list, containerId, platform){
+function renderMusic(list, containerId){
   const el = document.getElementById(containerId);
   el.innerHTML='';
   list.forEach((s,i)=>{
@@ -343,9 +332,7 @@ function renderMusic(list, containerId, platform){
       <div style="color:#ccc">▶</div>`;
     div.onclick=()=>{
       addHistory(s.n,'');
-      if(platform==='netease') window.open('https://music.163.com/#/song?id='+s.id,'_blank');
-      else if(platform==='qq') window.open('https://www.yeyulingfeng.com/tools/music/?name='+encodeURIComponent(s.n+' '+s.a),'_blank');
-      else window.open(s.url,'_blank');
+      window.open('http://music.sanst.cn/#/search/'+encodeURIComponent(s.n+' '+s.a),'_blank');
     };
     el.appendChild(div);
   });
@@ -546,8 +533,7 @@ function loadFinanceAI(){
 }
 
 loadArticles();loadListening();
-renderMusic(neteaseSongs,'music-netease','netease');
-renderMusic(qqSongs,'music-qq','qq');
+renderMusic(neteaseSongs,'music-netease');
 loadMedical();
 loadFinanceNews();loadFinanceETF();loadFinanceAI();
 </script>
