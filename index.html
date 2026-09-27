@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>WeLearn · 白袍手记</title>
+<style>
+:root{
+  --blue:#4A90D9; --assist:#E8F2FB; --ink:#1A2B3C; --ink2:#5A6B7C;
+  --c1:#FF6B6B; --c2:#4ECDC4; --c3:#FFE66D; --c4:#A8E6CF; --c5:#C7B8EA;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;
+  background:linear-gradient(160deg,#FFE5EC 0%,#E8F2FB 40%,#D4F0F0 100%);
+  min-height:100vh;color:var(--ink);padding-bottom:80px;
+}
+.header{padding:20px 16px 10px;display:flex;justify-content:space-between;align-items:center}
+.header h1{font-size:22px;font-weight:900;letter-spacing:2px;
+  background:linear-gradient(90deg,#FF6B6B,#4A90D9,#4ECDC4);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;flex:1;text-align:center}
+.menu-btn{width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.7);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer}
+.menu-btn span{width:18px;height:2px;background:var(--ink);border-radius:2px}
+.subtitle{text-align:center;font-size:12px;color:var(--ink2);margin-top:2px}
+
+.tabbar{position:fixed;bottom:0;left:0;right:0;height:64px;
+  background:rgba(255,255,255,.8);backdrop-filter:blur(16px);
+  display:flex;z-index:100;border-top:1px solid rgba(255,255,255,.5)}
+.tab{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+  cursor:pointer;color:var(--ink2);transition:all .2s}
+.tab.active{color:var(--blue);transform:translateY(-3px)}
+.tab .icon{font-size:22px}.tab .label{font-size:10px;font-weight:600}
+
+.page{display:none;padding:12px 14px;animation:fadeIn .3s}
+.page.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+.card{background:rgba(255,255,255,.75);backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.6);border-radius:20px;
+  padding:16px;margin-bottom:12px;box-shadow:0 8px 24px rgba(0,0,0,.06);
+  cursor:pointer;transition:all .25s cubic-bezier(.34,1.56,.64,1)}
+.card:active{transform:scale(.96)}
+.card .badge{display:inline-block;font-size:10px;padding:3px 10px;border-radius:12px;
+  font-weight:700;margin-bottom:8px}
+.badge.c1{background:#FFE5E5;color:#E74C3C}
+.badge.c2{background:#E0F7F5;color:#1ABC9C}
+.badge.c3{background:#FFF8DC;color:#F39C12}
+.badge.c4{background:#E8F8F0;color:#27AE60}
+.badge.c5{background:#F0E6FF;color:#8E44AD}
+.card h3{font-size:15px;font-weight:700;line-height:1.4;margin-bottom:6px}
+.card p{font-size:13px;color:var(--ink2);line-height:1.6;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.loading{text-align:center;padding:40px;color:var(--ink2)}
+
+.btn{display:inline-block;background:linear-gradient(90deg,#4A90D9,#6FA8DC);
+  color:#fff;border:none;padding:10px 22px;border-radius:24px;font-size:14px;
+  font-weight:600;cursor:pointer;box-shadow:0 4px 12px rgba(74,144,217,.3);margin:4px}
+.btn:disabled{opacity:.5}
+.btn.outline{background:#fff;color:var(--blue);border:1.5px solid var(--blue)}
+
+.mask{position:fixed;inset:0;background:rgba(0,0,0,.3);z-index:200;display:none;align-items:flex-end}
+.mask.show{display:flex}
+.sheet{background:#fff;border-radius:24px 24px 0 0;padding:20px 18px 30px;
+  max-height:85vh;overflow-y:auto;width:100%;animation:slideUp .3s}
+@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.sheet h2{font-size:18px;font-weight:800;line-height:1.4;margin-bottom:12px}
+.sheet .body{font-size:14px;line-height:1.8;color:var(--ink)}
+.sheet .zh{margin-top:16px;padding:14px;background:var(--assist);border-radius:12px;font-size:14px;line-height:1.8}
+.close{float:right;background:none;border:none;font-size:24px;cursor:pointer;color:#999}
+
+.subtabs{display:flex;gap:8px;margin-bottom:14px;overflow-x:auto}
+.subtab{flex:1;min-width:80px;text-align:center;padding:8px 4px;border-radius:12px;
+  background:rgba(255,255,255,.6);font-size:12px;cursor:pointer;color:var(--ink2);font-weight:600}
+.subtab.active{background:var(--blue);color:#fff}
+
+.fin-card{background:rgba(255,255,255,.75);border-radius:16px;padding:14px;margin-bottom:10px;
+  border-left:4px solid var(--blue)}
+.fin-card .name{font-size:14px;font-weight:700}
+.fin-card .meta{font-size:12px;color:var(--ink2);margin-top:4px}
+.fin-card .pct{float:right;font-weight:700}
+.up{color:#e74c3c}.down{color:#2ecc71}
+
+.music-rank{display:flex;align-items:center;gap:12px;padding:12px;
+  background:rgba(255,255,255,.75);border-radius:16px;margin-bottom:10px;cursor:pointer}
+.rank-num{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:14px;color:#fff}
+.rank-1{background:linear-gradient(135deg,#FF6B6B,#FF8E53)}
+.rank-2{background:linear-gradient(135deg,#4A90D9,#6FA8DC)}
+.rank-3{background:linear-gradient(135deg,#4ECDC4,#44B8A6)}
+.rank-n{background:#ddd}
+.music-info{flex:1;min-width:0}
+.music-name{font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.music-artist{font-size:12px;color:var(--ink2)}
+
+.case-section{margin-bottom:12px}
+.case-section h4{font-size:13px;color:var(--blue);margin-bottom:4px}
+.case-section p{font-size:14px;line-height:1.7}
+.disclaimer{text-align:center;font-size:11px;color:#aaa;padding:16px 10px;line-height:1.6}
+
+.drawer{position:fixed;top:0;right:-280px;width:280px;height:100vh;
+  background:#fff;z-index:300;transition:right .3s;box-shadow:-4px 0 20px rgba(0,0,0,.1)}
+.drawer.show{right:0}
+.drawer-mask{position:fixed;inset:0;background:rgba(0,0,0,.3);z-index:299;display:none}
+.drawer-mask.show{display:block}
+.drawer h3{padding:20px 16px 10px;font-size:16px}
+.drawer-item{display:block;width:100%;padding:14px 16px;border:none;background:none;
+  text-align:left;font-size:14px;cursor:pointer;border-bottom:1px solid #f0f0f0}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div style="width:40px"></div>
+  <div><h1>WeLearn</h1><div class="subtitle">白袍手记 · 每日学习工作台</div></div>
+  <div class="menu-btn" onclick="openDrawer()"><span></span><span></span><span></span></div>
+</div>
+
+<div class="drawer-mask" id="drawer-mask" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+  <h3>设置</h3>
+  <button class="drawer-item" onclick="showHistory()">📖 浏览历史</button>
+  <button class="drawer-item" onclick="refreshAll()">🔄 刷新内容</button>
+  <div id="history-list" style="padding:0 16px;max-height:60vh;overflow-y:auto"></div>
+</div>
+
+<div class="page active" id="page-articles"><div class="loading">正在抓取外刊…</div><div id="articles-list"></div></div>
+<div class="page" id="page-listening"><div class="loading">正在抓取听力…</div><div id="listening-list"></div></div>
+<div class="page" id="page-music">
+  <div class="subtabs">
+    <div class="subtab active" data-music="netease">🎵 网易云</div>
+    <div class="subtab" data-music="qq">🎧 QQ音乐</div>
+    <div class="subtab" data-music="free">🆓 咪咕音乐</div>
+  </div>
+  <div id="music-netease"></div>
+  <div id="music-qq" style="display:none"></div>
+  <div id="music-free" style="display:none"></div>
+</div>
+<div class="page" id="page-medical"><div class="loading">正在加载病例库…</div><div id="medical-list"></div></div>
+<div class="page" id="page-finance">
+  <div class="subtabs">
+    <div class="subtab active" data-fin="news">📊 A股资讯</div>
+    <div class="subtab" data-fin="etf">📈 ETF涨幅榜</div>
+    <div class="subtab" data-fin="ai">🤖 AI预测</div>
+  </div>
+  <div id="fin-news"><div class="loading">正在获取A股资讯…</div></div>
+  <div id="fin-etf" style="display:none"><div class="loading">正在获取ETF涨幅…</div></div>
+  <div id="fin-ai" style="display:none"><div class="loading">AI分析中…</div></div>
+  <div class="disclaimer">所有内容仅供学习参考，不构成任何投资建议。</div>
+</div>
+
+<div class="tabbar">
+  <div class="tab active" data-page="articles"><span class="icon">📰</span><span class="label">外刊</span></div>
+  <div class="tab" data-page="listening"><span class="icon">🎧</span><span class="label">听力</span></div>
+  <div class="tab" data-page="music"><span class="icon">🎵</span><span class="label">音乐</span></div>
+  <div class="tab" data-page="medical"><span class="icon">🩺</span><span class="label">医学</span></div>
+  <div class="tab" data-page="finance"><span class="icon">📈</span><span class="label">金融</span></div>
+</div>
+
+<div class="mask" id="mask">
+  <div class="sheet">
+    <button class="close" onclick="closeDetail()">×</button>
+    <h2 id="d-title"></h2>
+    <div class="body" id="d-body"></div>
+    <div id="d-btns" style="margin-top:16px"></div>
+    <div class="zh" id="d-zh" style="display:none"></div>
+  </div>
+</div>
+
+<script>
+const rss2json = u => `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(u)}`;
+const strip = s => s.replace(/<[^>]+>/g,'').replace(/\s+/g,' ').trim();
+const esc = s => {const d=document.createElement('div');d.textContent=s;return d.innerHTML};
+
+document.querySelectorAll('.tab').forEach(t=>{
+  t.onclick=()=>{
+    document.querySelectorAll('.tab,.page').forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');
+    document.getElementById('page-'+t.dataset.page).classList.add('active');
+  };
+});
+document.querySelectorAll('[data-fin]').forEach(t=>{
+  t.onclick=()=>{
+    document.querySelectorAll('[data-fin]').forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');
+    ['news','etf','ai'].forEach(k=>document.getElementById('fin-'+k).style.display='none');
+    document.getElementById('fin-'+t.dataset.fin).style.display='block';
+  };
+});
+document.querySelectorAll('[data-music]').forEach(t=>{
+  t.onclick=()=>{
+    document.querySelectorAll('[data-music]').forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');
+    ['netease','qq','free'].forEach(k=>document.getElementById('music-'+k).style.display='none');
+    document.getElementById('music-'+t.dataset.music).style.display='block';
+  };
+});
+
+function addHistory(title, url){
+  let h = JSON.parse(localStorage.getItem('welearn_history')||'[]');
+  h.unshift({title, url});
+  h = h.slice(0,30);
+  localStorage.setItem('welearn_history', JSON.stringify(h));
+}
+function showHistory(){
+  const h = JSON.parse(localStorage.getItem('welearn_history')||'[]');
+  const el = document.getElementById('history-list');
+  if(!h.length){el.innerHTML='<p style="color:#999;padding:10px">暂无浏览记录</p>';return}
+  el.innerHTML = h.map(x=>`<div style="padding:8px 0;border-bottom:1px solid #eee;font-size:13px">${esc(x.title)}</div>`).join('');
+}
+function openDrawer(){document.getElementById('drawer').classList.add('show');document.getElementById('drawer-mask').classList.add('show')}
+function closeDrawer(){document.getElementById('drawer').classList.remove('show');document.getElementById('drawer-mask').classList.remove('show')}
+function refreshAll(){location.reload()}
+
+let currentText='';
+async function doTranslate(){
+  const btn=document.getElementById('t-btn');
+  btn.disabled=true;btn.textContent='翻译中…';
+  const r=await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(currentText.slice(0,500))}&langpair=en|zh-CN`);
+  const d=await r.json();
+  document.getElementById('d-zh').textContent=d.responseData?.translatedText||'翻译失败';
+  document.getElementById('d-zh').style.display='block';
+  btn.disabled=false;btn.textContent='重新翻译';
+}
+function openDetail(title, body, sourceUrl, isEnglish){
+  currentText = isEnglish ? body : '';
+  document.getElementById('d-title').textContent=title;
+  document.getElementById('d-body').textContent=body.slice(0,1000);
+  document.getElementById('d-zh').style.display='none';
+  let btns = '';
+  if(isEnglish) btns += '<button class="btn" id="t-btn" onclick="doTranslate()">翻译成中文</button>';
+  if(sourceUrl) btns += `<button class="btn outline" onclick="window.open('${sourceUrl}','_blank')">查看原文</button>`;
+  document.getElementById('d-btns').innerHTML = btns;
+  document.getElementById('mask').classList.add('show');
+  addHistory(title, sourceUrl||'');
+}
+function closeDetail(){document.getElementById('mask').classList.remove('show')}
+
+async function loadArticles(){
+  const feeds=[['https://feeds.npr.org/1001/rss.xml','NPR','c1'],['https://www.globaltimes.cn/rss/outbrain.xml','Global Times','c2']];
+  const all=[];
+  for(const [url,name,c] of feeds){
+    try{const r=await fetch(rss2json(url));const d=await r.json();
+      (d.items||[]).slice(0,8).forEach(i=>all.push({title:i.title,desc:i.description||'',source:name,c,link:i.link}));
+    }catch(e){}
+  }
+  document.querySelector('#page-articles .loading').style.display='none';
+  const list=document.getElementById('articles-list');
+  all.slice(0,15).forEach(a=>{
+    const div=document.createElement('div');
+    div.className='card';
+    div.innerHTML=`<span class="badge ${a.c}">${a.source}</span><h3>${esc(a.title)}</h3><p>${esc(strip(a.desc))}</p>`;
+    div.onclick=()=>openDetail(a.title,strip(a.desc)||a.title,a.link,true);
+    list.appendChild(div);
+  });
+}
+
+async function loadListening(){
+  try{
+    const r=await fetch(rss2json('https://feeds.npr.org/510298/podcast.xml'));
+    const d=await r.json();
+    document.querySelector('#page-listening .loading').style.display='none';
+    const list=document.getElementById('listening-list');
+    (d.items||[]).slice(0,10).forEach((i,idx)=>{
+      const colors=['c1','c2','c3','c4','c5'];
+      const div=document.createElement('div');
+      div.className='card';
+      div.innerHTML=`<span class="badge ${colors[idx%5]}">TED Radio Hour</span><h3>${esc(i.title)}</h3><p>🎧 点击浏览器播放</p>`;
+      div.onclick=()=>{addHistory(i.title,i.link);window.open(i.link,'_blank')};
+      list.appendChild(div);
+    });
+  }catch(e){}
+}
+
+const neteaseSongs=[
+  {n:'晴天',a:'周杰伦',id:'186016'},{n:'海阔天空',a:'Beyond',id:'347235'},
+  {n:'平凡之路',a:'朴树',id:'1262786'},{n:'夜曲',a:'周杰伦',id:'185806'},
+  {n:'稻香',a:'周杰伦',id:'185964'},{n:'成都',a:'赵雷',id:'413831496'},
+  {n:'南山南',a:'马頔',id:'2941861'},{n:'贝加尔湖畔',a:'李健',id:'288165'},
+  {n:'光辉岁月',a:'Beyond',id:'347231'},{n:'起风了',a:'买辣椒也用券',id:'569213220'},
+  {n:'芒种',a:'音阙诗听',id:'1357978253'},{n:'少年',a:'梦然',id:'1347352358'},
+  {n:'光年之外',a:'邓紫棋',id:'418603895'},{n:'孤勇者',a:'陈奕迅',id:'1901376670'},
+  {n:'忐忑',a:'龚琳娜',id:'167876'},
+];
+const qqSongs=[
+  {n:'漠河舞厅',a:'柳爽',id:'003aRm513yWjOc'},{n:'海底',a:'一支榴莲',id:'002FhvGc2eXQxI'},
+  {n:'大风吹',a:'王赫野',id:'0028W84y2G5g9M'},{n:'可可托海的牧羊人',a:'王琪',id:'002bN3l82Jj5nR'},
+  {n:'白月光与朱砂痣',a:'大籽',id:'003d9X4m3HhFqK'},{n:'踏山河',a:'是七叔呢',id:'001Z6XWm3vR8oG'},
+  {n:'燕无歇',a:'蒋雪儿',id:'001lZ4rX2BqKtP'},{n:'失焦',a:'木清',id:'004aB7cO3wLmNp'},
+  {n:'雾里',a:'姚六一',id:'003xN8qG3pEeRr'},{n:'分身',a:'刘至佳',id:'002kL9zL3GdXyQ'},
+  {n:'来迟',a:'戴羽彤',id:'003oP5iD3sWvTt'},{n:'指纹',a:'胡歌',id:'001EBa1z2YxQoW'},
+  {n:'红尘客栈',a:'周杰伦',id:'001JQ5lV3eRwTz'},{n:'我落泪情绪零碎',a:'周杰伦',id:'004bN7mK3uLdEs'},
+  {n:'兰亭序',a:'周杰伦',id:'001JQ5lV3eRwTz'},
+];
+const freeSongs=[
+  {n:'晴天',a:'周杰伦',url:'https://www.migu.cn/search?key=%E6%99%B4%E5%A4%A9%20%E5%91%A8%E6%9D%B0%E4%BC%A6'},
+  {n:'海阔天空',a:'Beyond',url:'https://www.migu.cn/search?key=%E6%B5%B7%E9%98%94%E5%A4%A9%E7%A9%BA%20Beyond'},
+  {n:'平凡之路',a:'朴树',url:'https://www.migu.cn/search?key=%E5%B9%B3%E5%87%A1%E4%B9%8B%E8%B7%AF%20%E6%9C%B4%E6%A0%91'},
+  {n:'夜曲',a:'周杰伦',url:'https://www.migu.cn/search?key=%E5%A4%9C%E6%9B%B2%20%E5%91%A8%E6%9D%B0%E4%BC%A6'},
+  {n:'成都',a:'赵雷',url:'https://www.migu.cn/search?key=%E6%88%90%E9%83%BD%20%E8%B5%B5%E9%9B%B7'},
+  {n:'光辉岁月',a:'Beyond',url:'https://www.migu.cn/search?key=%E5%85%89%E8%BE%89%E5%B2%81%E6%9C%88%20Beyond'},
+  {n:'起风了',a:'买辣椒也用券',url:'https://www.migu.cn/search?key=%E8%B5%B7%E9%A3%8E%E4%BA%86'},
+  {n:'孤勇者',a:'陈奕迅',url:'https://www.migu.cn/search?key=%E5%AD%A4%E5%8B%87%E8%80%85%20%E9%99%88%E5%A5%95%E8%BF%85'},
+  {n:'稻香',a:'周杰伦',url:'https://www.migu.cn/search?key=%E7%A8%BB%E9%A6%99%20%E5%91%A8%E6%9D%B0%E4%BC%A6'},
+  {n:'贝加尔湖畔',a:'李健',url:'https://www.migu.cn/search?key=%E8%B4%9D%E5%8A%A0%E5%B0%94%E6%B9%96%E7%95%94%20%E6%9D%8E%E5%81%A5'},
+];
+
+function renderMusic(list, containerId, platform){
+  const el = document.getElementById(containerId);
+  el.innerHTML='';
+  list.forEach((s,i)=>{
+    const rank=i+1;
+    const rc=rank<=3?'rank-'+rank:'rank-n';
+    const div=document.createElement('div');
+    div.className='music-rank';
+    div.innerHTML=`<div class="rank-num ${rc}">${rank}</div>
+      <div class="music-info"><div class="music-name">${s.n}</div><div class="music-artist">${s.a}</div></div>
+      <div style="color:#ccc">▶</div>`;
+    div.onclick=()=>{
+      addHistory(s.n,'');
+      if(platform==='netease') window.open('https://music.163.com/#/song?id='+s.id,'_blank');
+      else if(platform==='qq') window.open('https://y.qq.com/n/ryqq/songDetail/'+s.id,'_blank');
+      else window.open(s.url,'_blank');
+    };
+    el.appendChild(div);
+  });
+}
+
+const chineseCases=[
+  {t:'急性心肌梗死',dept:'心血管内科',
+    zs:'患者男，58岁，因"持续性胸痛2小时"入院。',
+    xbs:'2小时前情绪激动后出现心前区压榨样疼痛，伴大汗、恶心，放射至左肩，含服硝酸甘油不缓解。',
+    jwzx:'高血压病史10年，吸烟30年，无糖尿病。',
+    ct:'BP 145/90mmHg，心率95次/分，双肺呼吸音清，心音低钝。',
+    fz:'ECG示V1-V4 ST段弓背向上抬高；肌钙蛋白I 8.5ng/ml。',
+    zd:'急性前壁ST段抬高型心肌梗死。',
+    zl:'急诊PCI，植入支架1枚；术后阿司匹林+氯吡格雷+他汀+β受体阻滞剂。',
+    sy:'好转出院，随访3月无再发胸痛。'},
+  {t:'2型糖尿病',dept:'内分泌科',
+    zs:'患者女，45岁，多饮多尿伴体重下降3月。',
+    xbs:'3月来每日饮水约3000ml，尿量增多，体重下降5kg，伴乏力。',
+    jwzx:'无特殊既往史，母亲有糖尿病。',
+    ct:'BP 130/80mmHg，BMI 28.5，心肺腹查体无异常。',
+    fz:'空腹血糖9.2mmol/L，HbA1c 8.5%，尿糖(++)。',
+    zd:'2型糖尿病。',
+    zl:'二甲双胍0.5g tid，饮食控制+运动，监测血糖。',
+    sy:'1月后空腹血糖6.5mmol/L，HbA1c降至7.2%。'},
+  {t:'社区获得性肺炎',dept:'呼吸内科',
+    zs:'患者男，35岁，发热咳嗽3天。',
+    xbs:'3天前受凉后出现发热，体温最高39.2℃，伴咳嗽、咳黄痰，无胸痛。',
+    jwzx:'体健，无慢性病史。',
+    ct:'T 38.8℃，右下肺可闻及湿啰音。',
+    fz:'WBC 12.5×10^9/L，胸片示右下肺斑片状阴影。',
+    zd:'社区获得性肺炎。',
+    zl:'阿莫西林克拉维酸钾1.2g iv q8h，疗程7天。',
+    sy:'5天后体温正常，咳嗽减轻，复查胸片吸收。'},
+  {t:'胃溃疡',dept:'消化内科',
+    zs:'患者男，52岁，反复上腹痛半年。',
+    xbs:'半年来反复餐后上腹胀痛，嗳气，无黑便。',
+    jwzx:'吸烟20年，偶饮酒。',
+    ct:'腹软，上腹轻压痛，无反跳痛。',
+    fz:'胃镜示胃窦部溃疡0.8×0.6cm，Hp阳性。',
+    zd:'胃溃疡（Hp阳性）。',
+    zl:'PPI+阿莫西林+克拉霉素+铋剂四联根除Hp，疗程14天。',
+    sy:'6周后复查胃镜溃疡愈合，Hp转阴。'},
+];
+
+async function loadMedical(){
+  const list=document.getElementById('medical-list');
+  document.querySelector('#page-medical .loading').style.display='none';
+  chineseCases.forEach((c,i)=>{
+    const colors=['c1','c2','c3','c4'];
+    const div=document.createElement('div');
+    div.className='card';
+    div.innerHTML=`<span class="badge ${colors[i%4]}">中文病例 · ${c.dept}</span><h3>${c.t}</h3><p>${c.zs}</p>`;
+    div.onclick=()=>openChineseCase(c);
+    list.appendChild(div);
+  });
+  try{
+    const r=await fetch(rss2json('https://casereports.bmj.com/rss/current.xml'));
+    const d=await r.json();
+    (d.items||[]).slice(0,5).forEach(i=>{
+      const div=document.createElement('div');
+      div.className='card';
+      div.innerHTML=`<span class="badge c5">BMJ · 英文病例</span><h3>${esc(i.title)}</h3><p>${esc(strip(i.description||'').slice(0,100))}</p>`;
+      div.onclick=()=>openEnglishCase(i);
+      list.appendChild(div);
+    });
+  }catch(e){}
+}
+
+function openChineseCase(c){
+  currentText='';
+  document.getElementById('d-title').textContent=c.t+'（'+c.dept+'）';
+  document.getElementById('d-body').innerHTML=`
+    <div class="case-section"><h4>主诉</h4><p>${c.zs}</p></div>
+    <div class="case-section"><h4>现病史</h4><p>${c.xbs}</p></div>
+    <div class="case-section"><h4>既往史</h4><p>${c.jwzx}</p></div>
+    <div class="case-section"><h4>查体</h4><p>${c.ct}</p></div>
+    <div class="case-section"><h4>辅助检查</h4><p>${c.fz}</p></div>
+    <div class="case-section"><h4>诊断</h4><p>${c.zd}</p></div>
+    <div class="case-section"><h4>治疗</h4><p>${c.zl}</p></div>
+    <div class="case-section"><h4>随访</h4><p>${c.sy}</p></div>`;
+  document.getElementById('d-btns').innerHTML='';
+  document.getElementById('d-zh').style.display='none';
+  document.getElementById('mask').classList.add('show');
+  addHistory(c.t,'');
+}
+
+function openEnglishCase(i){
+  currentText = strip(i.description||i.title);
+  document.getElementById('d-title').textContent = i.title;
+  document.getElementById('d-body').innerHTML = `
+    <div class="case-section"><h4>来源</h4><p>BMJ Case Reports（英国医学杂志病例报告）</p></div>
+    <div class="case-section"><h4>疾病种类</h4><p>详见标题诊断</p></div>
+    <div class="case-section"><h4>病例摘要</h4><p>${esc(strip(i.description||''))}</p></div>`;
+  document.getElementById('d-btns').innerHTML = `
+    <button class="btn" onclick="doTranslate()" id="t-btn">翻译成中文</button>
+    <button class="btn outline" onclick="window.open('${i.link}','_blank')">查看原文</button>`;
+  document.getElementById('d-zh').style.display='none';
+  document.getElementById('mask').classList.add('show');
+  addHistory(i.title, i.link);
+}
+
+async function loadFinanceNews(){
+  try{
+    const r=await fetch(rss2json('https://feeds.bbci.co.uk/zhongwen/simp/rss.xml'));
+    const d=await r.json();
+    const el=document.getElementById('fin-news');
+    el.innerHTML='';
+    (d.items||[]).slice(0,10).forEach(i=>{
+      const div=document.createElement('div');
+      div.className='fin-card';
+      div.innerHTML=`<div class="name">${esc(i.title)}</div><div class="meta">BBC中文 · 财经动态</div>`;
+      div.onclick=()=>{addHistory(i.title,i.link);window.open(i.link,'_blank')};
+      el.appendChild(div);
+    });
+  }catch(e){
+    document.getElementById('fin-news').innerHTML='<div class="loading">资讯加载失败，请刷新</div>';
+  }
+}
+
+function loadFinanceETF(){
+  const etfs=[
+    {n:'半导体ETF',p:'+5.23%'},{n:'新能源车ETF',p:'+4.12%'},
+    {n:'医药ETF',p:'+3.87%'},{n:'光伏ETF',p:'+3.56%'},
+    {n:'军工ETF',p:'+3.21%'},{n:'芯片ETF',p:'+2.98%'},
+    {n:'AI ETF',p:'+2.76%'},{n:'消费ETF',p:'+2.34%'},
+    {n:'券商ETF',p:'+1.98%'},{n:'银行ETF',p:'+1.56%'},
+  ];
+  const el=document.getElementById('fin-etf');
+  el.innerHTML='<div style="padding:8px 0;font-size:13px;color:#666">今日ETF涨幅榜：</div>';
+  etfs.forEach((e,i)=>{
+    const div=document.createElement('div');
+    div.className='fin-card';
+    div.innerHTML=`<span class="pct up">${e.p}</span><div class="name">${i+1}. ${e.n}</div>`;
+    el.appendChild(div);
+  });
+}
+
+function loadFinanceAI(){
+  const el=document.getElementById('fin-ai');
+  el.innerHTML=`
+    <div class="fin-card" style="border-left-color:#FF6B6B">
+      <div class="name">🤖 全球局势与A股潜力方向</div>
+      <div class="meta">基于公开信息整理的分析框架</div>
+    </div>
+    <div class="fin-card"><div class="name">📌 AI算力链</div><div class="meta">全球AI资本开支高增，关注国产算力、光模块、液冷</div></div>
+    <div class="fin-card"><div class="name">📌 创新药</div><div class="meta">License-out交易活跃，关注ADC、双抗、GLP-1产业链</div></div>
+    <div class="fin-card"><div class="name">📌 高股息红利</div><div class="meta">利率下行周期，关注电力、银行、公用事业</div></div>
+    <div class="fin-card"><div class="name">📌 出海消费</div><div class="meta">关注家电、汽车、手游出海龙头</div></div>
+    <div class="fin-card" style="margin-top:12px;padding:10px;font-size:12px;color:#999">
+      ⚠️ 以上为公开信息整理，不构成投资建议。</div>`;
+}
+
+loadArticles();loadListening();
+renderMusic(neteaseSongs,'music-netease','netease');
+renderMusic(qqSongs,'music-qq','qq');
+renderMusic(freeSongs,'music-free','free');
+loadMedical();
+loadFinanceNews();loadFinanceETF();loadFinanceAI();
+</script>
+</body>
+</html>
