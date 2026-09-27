@@ -130,20 +130,18 @@ body{
   <div class="subtabs">
     <div class="subtab active" data-music="netease">🎵 网易云</div>
     <div class="subtab" data-music="qq">🎧 QQ音乐</div>
-    <div class="subtab" data-music="free">🎵 夸克音乐</div>
   </div>
   <div id="music-netease"></div>
   <div id="music-qq" style="display:none"></div>
-  <div id="music-free" style="display:none"></div>
 </div>
 <div class="page" id="page-medical"><div class="loading">正在加载病例库…</div><div id="medical-list"></div></div>
 <div class="page" id="page-finance">
   <div class="subtabs">
-    <div class="subtab active" data-fin="news">📊 A股资讯</div>
+    <div class="subtab active" data-fin="news">📊 财经资讯</div>
     <div class="subtab" data-fin="etf">📈 ETF涨幅榜</div>
     <div class="subtab" data-fin="ai">🤖 AI预测</div>
   </div>
-  <div id="fin-news"><div class="loading">正在获取A股资讯…</div></div>
+  <div id="fin-news"><div class="loading">正在获取国内财经资讯…</div></div>
   <div id="fin-etf" style="display:none"><div class="loading">正在获取ETF涨幅…</div></div>
   <div id="fin-ai" style="display:none"><div class="loading">AI分析中…</div></div>
   <div class="disclaimer">所有内容仅供学习参考，不构成任何投资建议。</div>
@@ -292,19 +290,6 @@ const qqSongs=[
   {n:'红尘客栈',a:'周杰伦',id:'001JQ5lV3eRwTz'},{n:'我落泪情绪零碎',a:'周杰伦',id:'004bN7mK3uLdEs'},
   {n:'兰亭序',a:'周杰伦',id:'001JQ5lV3eRwTz'},
 ];
-const freeSongs=[
-  {n:'晴天',a:'周杰伦',url:'https://music.quark.cn/search?key=%E6%99%B4%E5%A4%A9%20%E5%91%A8%E6%9D%B0%E4%BC%A6'},
-  {n:'海阔天空',a:'Beyond',url:'https://music.quark.cn/search?key=%E6%B5%B7%E9%98%94%E5%A4%A9%E7%A9%BA%20Beyond'},
-  {n:'平凡之路',a:'朴树',url:'https://music.quark.cn/search?key=%E5%B9%B3%E5%87%A1%E4%B9%8B%E8%B7%AF%20%E6%9C%B4%E6%A0%91'},
-  {n:'夜曲',a:'周杰伦',url:'https://music.quark.cn/search?key=%E5%A4%9C%E6%9B%B2%20%E5%91%A8%E6%9D%B0%E4%BC%A6'},
-  {n:'成都',a:'赵雷',url:'https://music.quark.cn/search?key=%E6%88%90%E9%83%BD%20%E8%B5%B5%E9%9B%B7'},
-  {n:'光辉岁月',a:'Beyond',url:'https://music.quark.cn/search?key=%E5%85%89%E8%BE%89%E5%B2%81%E6%9C%88%20Beyond'},
-  {n:'起风了',a:'买辣椒也用券',url:'https://music.quark.cn/search?key=%E8%B5%B7%E9%A3%8E%E4%BA%86'},
-  {n:'孤勇者',a:'陈奕迅',url:'https://music.quark.cn/search?key=%E5%AD%A4%E5%8B%87%E8%80%85%20%E9%99%88%E5%A5%95%E8%BF%85'},
-  {n:'稻香',a:'周杰伦',url:'https://music.quark.cn/search?key=%E7%A8%BB%E9%A6%99%20%E5%91%A8%E6%9D%B0%E4%BC%A6'},
-  {n:'贝加尔湖畔',a:'李健',url:'https://music.quark.cn/search?key=%E8%B4%9D%E5%8A%A0%E5%B0%94%E6%B9%96%E7%95%94%20%E6%9D%8E%E5%81%A5'},
-];
-
 function renderMusic(list, containerId, platform){
   const el = document.getElementById(containerId);
   el.innerHTML='';
@@ -319,7 +304,7 @@ function renderMusic(list, containerId, platform){
     div.onclick=()=>{
       addHistory(s.n,'');
       if(platform==='netease') window.open('https://music.163.com/#/song?id='+s.id,'_blank');
-      else if(platform==='qq') window.open('https://y.qq.com/n/ryqq/songDetail/'+s.id,'_blank');
+      else if(platform==='qq') window.open('https://www.yinyueke.net/m/search?key='+encodeURIComponent(s.n+' '+s.a),'_blank');
       else window.open(s.url,'_blank');
     };
     el.appendChild(div);
@@ -327,7 +312,7 @@ function renderMusic(list, containerId, platform){
 }
 
 const chineseCases=[
-  {t:'急性心肌梗死',dept:'心血管内科',src:'https://dxy.com/search/lib?query=%E6%80%A5%E6%80%A7%E5%BF%83%E8%82%8C%E6%A2%93%E6%AD%BB',
+  {t:'急性心肌梗死',dept:'心血管内科',src:'https://weixin.sogou.com/weixin?type=2&query=%E6%80%A5%E6%80%A7%E5%BF%83%E8%82%8C%E6%A2%93%E6%AD%BB%E8%AF%8A%E7%96%97',
     zs:'患者男，58岁，因"持续性胸痛2小时"入院。',
     xbs:'2小时前情绪激动后出现心前区压榨样疼痛，伴大汗、恶心，放射至左肩，含服硝酸甘油不缓解。',
     jwzx:'高血压病史10年，吸烟30年，无糖尿病。',
@@ -336,7 +321,7 @@ const chineseCases=[
     zd:'急性前壁ST段抬高型心肌梗死。',
     zl:'急诊PCI，植入支架1枚；术后阿司匹林+氯吡格雷+他汀+β受体阻滞剂。',
     sy:'好转出院，随访3月无再发胸痛。'},
-  {t:'2型糖尿病',dept:'内分泌科',src:'https://dxy.com/search/lib?query=2%E5%9E%8B%E7%B3%96%E5%B0%BF%E7%97%85',
+  {t:'2型糖尿病',dept:'内分泌科',src:'https://weixin.sogou.com/weixin?type=2&query=2%E5%9E%8B%E7%B3%96%E5%B0%BF%E7%97%85%E8%AF%8A%E7%96%97',
     zs:'患者女，45岁，多饮多尿伴体重下降3月。',
     xbs:'3月来每日饮水约3000ml，尿量增多，体重下降5kg，伴乏力。',
     jwzx:'无特殊既往史，母亲有糖尿病。',
@@ -345,7 +330,7 @@ const chineseCases=[
     zd:'2型糖尿病。',
     zl:'二甲双胍0.5g tid，饮食控制+运动，监测血糖。',
     sy:'1月后空腹血糖6.5mmol/L，HbA1c降至7.2%。'},
-  {t:'社区获得性肺炎',dept:'呼吸内科',src:'https://dxy.com/search/lib?query=%E7%A4%BE%E5%8C%BA%E8%8E%B7%E5%BE%97%E6%80%A7%E8%82%BA%E7%82%8E',
+  {t:'社区获得性肺炎',dept:'呼吸内科',src:'https://weixin.sogou.com/weixin?type=2&query=%E7%A4%BE%E5%8C%BA%E8%8E%B7%E5%BE%97%E6%80%A7%E8%82%BA%E7%82%8E%E8%AF%8A%E7%96%97',
     zs:'患者男，35岁，发热咳嗽3天。',
     xbs:'3天前受凉后出现发热，体温最高39.2℃，伴咳嗽、咳黄痰，无胸痛。',
     jwzx:'体健，无慢性病史。',
@@ -354,7 +339,7 @@ const chineseCases=[
     zd:'社区获得性肺炎。',
     zl:'阿莫西林克拉维酸钾1.2g iv q8h，疗程7天。',
     sy:'5天后体温正常，咳嗽减轻，复查胸片吸收。'},
-  {t:'胃溃疡',dept:'消化内科',src:'https://dxy.com/search/lib?query=%E8%83%83%E6%BA%83%E7%96%A1',
+  {t:'胃溃疡',dept:'消化内科',src:'https://weixin.sogou.com/weixin?type=2&query=%E8%83%83%E6%BA%83%E7%96%A1%E8%AF%8A%E7%96%97',
     zs:'患者男，52岁，反复上腹痛半年。',
     xbs:'半年来反复餐后上腹胀痛，嗳气，无黑便。',
     jwzx:'吸烟20年，偶饮酒。',
@@ -402,7 +387,7 @@ function openChineseCase(c){
     <div class="case-section"><h4>治疗</h4><p>${c.zl}</p></div>
     <div class="case-section"><h4>随访</h4><p>${c.sy}</p></div>`;
   document.getElementById('d-btns').innerHTML = `
-    <button class="btn outline" onclick="window.open('${c.src}','_blank')">查看原文（丁香园）</button>`;
+    <button class="btn outline" onclick="window.open('${c.src}','_blank')">查看原文（搜狗微信）</button>`;
   document.getElementById('d-zh').style.display='none';
   document.getElementById('mask').classList.add('show');
   addHistory(c.t,c.src);
@@ -432,7 +417,7 @@ async function loadFinanceNews(){
     (d.items||[]).slice(0,15).forEach(i=>{
       const div=document.createElement('div');
       div.className='fin-card';
-      div.innerHTML=`<div class="name">${esc(i.title)}</div><div class="meta">新浪财经 · A股动态</div>`;
+      div.innerHTML=`<div class="name">${esc(i.title)}</div><div class="meta">新浪财经 · 国内财经动态</div>`;
       div.onclick=()=>{addHistory(i.title,i.link);window.open(i.link,'_blank')};
       el.appendChild(div);
     });
@@ -477,7 +462,6 @@ function loadFinanceAI(){
 loadArticles();loadListening();
 renderMusic(neteaseSongs,'music-netease','netease');
 renderMusic(qqSongs,'music-qq','qq');
-renderMusic(freeSongs,'music-free','free');
 loadMedical();
 loadFinanceNews();loadFinanceETF();loadFinanceAI();
 </script>
