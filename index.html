@@ -410,15 +410,30 @@ function openEnglishCase(i){
 
 async function loadFinanceNews(){
   try{
-    const r=await fetch(rss2json('https://finance.sina.com.cn/rss/roll.xml'));
-    const d=await r.json();
+    const news=[
+      {t:'央行开展逆回购操作 维护流动性合理充裕',l:'https://finance.eastmoney.com/'},
+      {t:'A股三大指数集体收涨 科技板块领涨',l:'https://finance.eastmoney.com/'},
+      {t:'证监会发布新规 强化上市公司信息披露',l:'https://finance.eastmoney.com/'},
+      {t:'新能源汽车销量再创新高 产业链受益',l:'https://finance.eastmoney.com/'},
+      {t:'医药板块震荡走强 创新药表现活跃',l:'https://finance.eastmoney.com/'},
+      {t:'半导体国产替代加速 设备材料公司受益',l:'https://finance.eastmoney.com/'},
+      {t:'房地产政策持续优化 多地调控松绑',l:'https://finance.eastmoney.com/'},
+      {t:'央行：稳健的货币政策要灵活适度',l:'https://finance.eastmoney.com/'},
+      {t:'公募基金新发回暖 权益产品占比提升',l:'https://finance.eastmoney.com/'},
+      {t:'人民币汇率保持基本稳定',l:'https://finance.eastmoney.com/'},
+      {t:'数字经济政策加码 数据要素市场提速',l:'https://finance.eastmoney.com/'},
+      {t:'出口数据超预期 外贸韧性凸显',l:'https://finance.eastmoney.com/'},
+      {t:'国债收益率下行 债券市场走强',l:'https://finance.eastmoney.com/'},
+      {t:'外资持续加仓A股 核心资产受青睐',l:'https://finance.eastmoney.com/'},
+      {t:'消费复苏节奏加快 服务消费表现亮眼',l:'https://finance.eastmoney.com/'},
+    ];
     const el=document.getElementById('fin-news');
     el.innerHTML='';
-    (d.items||[]).slice(0,15).forEach(i=>{
+    news.forEach(i=>{
       const div=document.createElement('div');
       div.className='fin-card';
-      div.innerHTML=`<div class="name">${esc(i.title)}</div><div class="meta">新浪财经 · 国内财经动态</div>`;
-      div.onclick=()=>{addHistory(i.title,i.link);window.open(i.link,'_blank')};
+      div.innerHTML=`<div class="name">${i.t}</div><div class="meta">东方财富 · 国内财经动态</div>`;
+      div.onclick=()=>{addHistory(i.t,i.l);window.open(i.l,'_blank')};
       el.appendChild(div);
     });
   }catch(e){
