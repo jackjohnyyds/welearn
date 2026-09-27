@@ -271,20 +271,43 @@ async function loadArticles(){
 }
 
 async function loadListening(){
-  try{
-    const r=await fetch(rss2json('https://feeds.npr.org/510298/podcast.xml'));
-    const d=await r.json();
-    document.querySelector('#page-listening .loading').style.display='none';
-    const list=document.getElementById('listening-list');
-    (d.items||[]).slice(0,10).forEach((i,idx)=>{
-      const colors=['c1','c2','c3','c4','c5'];
-      const div=document.createElement('div');
-      div.className='card';
-      div.innerHTML=`<span class="badge ${colors[idx%5]}">TED Radio Hour</span><h3>${esc(i.title)}</h3><p>🎧 点击浏览器播放</p>`;
-      div.onclick=()=>{addHistory(i.title,i.link);window.open(i.link,'_blank')};
-      list.appendChild(div);
-    });
-  }catch(e){}
+  const cet6=[
+    {t:'2024年6月六级真题（第1套）',time:'2024.6',url:'https://www.wehuster.com/cet6/202406-1.html'},
+    {t:'2024年6月六级真题（第2套）',time:'2024.6',url:'https://www.wehuster.com/cet6/202406-2.html'},
+    {t:'2023年12月六级真题（第1套）',time:'2023.12',url:'https://www.wehuster.com/cet6/202312-1.html'},
+    {t:'2023年12月六级真题（第2套）',time:'2023.12',url:'https://www.wehuster.com/cet6/202312-2.html'},
+    {t:'2023年6月六级真题（第1套）',time:'2023.6',url:'https://www.wehuster.com/cet6/202306-1.html'},
+    {t:'2023年6月六级真题（第2套）',time:'2023.6',url:'https://www.wehuster.com/cet6/202306-2.html'},
+    {t:'2022年12月六级真题（第1套）',time:'2022.12',url:'https://www.wehuster.com/cet6/202212-1.html'},
+    {t:'2022年12月六级真题（第2套）',time:'2022.12',url:'https://www.wehuster.com/cet6/202212-2.html'},
+  ];
+  const tingroom=[
+    {t:'74 Grandparents Are Great',src:'听 Room·入门',url:'https://m.tingroom.com/?mid=3&aid=570255'},
+    {t:'73 Smile',src:'听 Room·入门',url:'https://m.tingroom.com/?mid=3&aid=570254'},
+    {t:'72 I Set the Table',src:'听 Room·入门',url:'https://m.tingroom.com/?mid=3&aid=570253'},
+    {t:'71 Rabbits',src:'听 Room·入门',url:'https://m.tingroom.com/?mid=3&aid=570252'},
+    {t:'70 The Rainstorm',src:'听 Room·入门',url:'https://m.tingroom.com/?mid=3&aid=570251'},
+    {t:'69 Bird Colors',src:'听 Room·入门',url:'https://m.tingroom.com/?mid=3&aid=570250'},
+    {t:'68 I Draw A Bunny',src:'听 Room·入门',url:'https://m.tingroom.com/?mid=3&aid=570249'},
+  ];
+  document.querySelector('#page-listening .loading').style.display='none';
+  const list=document.getElementById('listening-list');
+  cet6.forEach((i,idx)=>{
+    const colors=['c1','c2','c3','c4','c5'];
+    const div=document.createElement('div');
+    div.className='card';
+    div.innerHTML=`<span class="badge ${colors[idx%5]}">六级真题 · ${i.time}</span><h3>${i.t}</h3><p>🎧 点击跳转播放</p>`;
+    div.onclick=()=>{addHistory(i.t,i.url);window.open(i.url,'_blank')};
+    list.appendChild(div);
+  });
+  tingroom.forEach((i,idx)=>{
+    const colors=['c1','c2','c3','c4','c5'];
+    const div=document.createElement('div');
+    div.className='card';
+    div.innerHTML=`<span class="badge ${colors[(idx+3)%5]}">${i.src}</span><h3>${i.t}</h3><p>🎧 点击跳转播放</p>`;
+    div.onclick=()=>{addHistory(i.t,i.url);window.open(i.url,'_blank')};
+    list.appendChild(div);
+  });
 }
 
 const neteaseSongs=[
