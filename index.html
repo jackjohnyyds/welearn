@@ -426,16 +426,35 @@ async function loadMedical(){
     list.appendChild(div);
   });
   try{
-    const r=await fetch(rss2json('https://casereports.bmj.com/rss/current.xml'));
+    const r=await fetch('medical.json?t='+Date.now());
     const d=await r.json();
-    (d.items||[]).slice(0,5).forEach(i=>{
+    (d.bmj||[]).slice(0,5).forEach(i=>{
       const div=document.createElement('div');
       div.className='card';
-      div.innerHTML=`<span class="badge c5">BMJ · 英文病例</span><h3>${esc(i.title)}</h3><p>${esc(strip(i.description||'').slice(0,100))}</p>`;
-      div.onclick=()=>openEnglishCase(i);
+      div.innerHTML=`<span class="badge c5">BMJ · 英文病例 · 每日更新</span><h3>${esc(i.t)}</h3><p>${esc(i.desc||'')}</p>`;
+      div.onclick=()=>{addHistory(i.t,i.link);window.open(i.link,'_blank')};
       list.appendChild(div);
     });
-  }catch(e){}
+    (d.pubmed||[]).forEach(i=>{
+      const div=document.createElement('div');
+      div.className='card';
+      div.innerHTML=`<span class="badge c1">PubMed · 最新病例报告</span><h3>${esc(i.t)}</h3><p>${esc(i.desc||'')}</p>`;
+      div.onclick=()=>{addHistory(i.t,i.link);window.open(i.link,'_blank')};
+      list.appendChild(div);
+    });
+  }catch(e){
+    try{
+      const r=await fetch(rss2json('https://casereports.bmj.com/rss/current.xml'));
+      const d=await r.json();
+      (d.items||[]).slice(0,5).forEach(i=>{
+        const div=document.createElement('div');
+        div.className='card';
+        div.innerHTML=`<span class="badge c5">BMJ · 英文病例</span><h3>${esc(i.title)}</h3><p>${esc(strip(i.description||'').slice(0,100))}</p>`;
+        div.onclick=()=>openEnglishCase(i);
+        list.appendChild(div);
+      });
+    }catch(e2){}
+  }
 }
 
 function openChineseCase(c){
@@ -473,8 +492,13 @@ function openEnglishCase(i){
 }
 
 async function loadFinanceNews(){
+  let news=null;
   try{
-    const news=[
+    const r=await fetch('finance.json?t='+Date.now());
+    const d=await r.json();
+    if(d.news && d.news.length) news=d.news;
+  }catch(e){}
+  if(!news) news=[
       {t:'央行开展逆回购操作 维护流动性合理充裕',l:'https://finance.eastmoney.com/'},
       {t:'A股三大指数集体收涨 科技板块领涨',l:'https://finance.eastmoney.com/'},
       {t:'证监会发布新规 强化上市公司信息披露',l:'https://finance.eastmoney.com/'},
@@ -493,20 +517,23 @@ async function loadFinanceNews(){
     ];
     const el=document.getElementById('fin-news');
     el.innerHTML='';
-    news.forEach(i=>{
+    news.slice(0,15).forEach(i=>{
       const div=document.createElement('div');
       div.className='fin-card';
-      div.innerHTML=`<div class="name">${i.t}</div><div class="meta">东方财富 · 国内财经动态</div>`;
+      div.innerHTML=`<div class="name">${i.t}</div><div class="meta">东方财富 · 每日A股快讯</div>`;
       div.onclick=()=>{addHistory(i.t,i.l);window.open(i.l,'_blank')};
       el.appendChild(div);
     });
-  }catch(e){
-    document.getElementById('fin-news').innerHTML='<div class="loading">资讯加载失败，请刷新</div>';
-  }
 }
 
-function loadFinanceETF(){
-  const etfs=[
+async function loadFinanceETF(){
+  let etfs=null;
+  try{
+    const r=await fetch('finance.json?t='+Date.now());
+    const d=await r.json();
+    if(d.etf && d.etf.length) etfs=d.etf;
+  }catch(e){}
+  if(!etfs) etfs=[
     {n:'半导体ETF',p:'+5.23%'},{n:'新能源车ETF',p:'+4.12%'},
     {n:'医药ETF',p:'+3.87%'},{n:'光伏ETF',p:'+3.56%'},
     {n:'军工ETF',p:'+3.21%'},{n:'芯片ETF',p:'+2.98%'},
@@ -514,11 +541,13 @@ function loadFinanceETF(){
     {n:'券商ETF',p:'+1.98%'},{n:'银行ETF',p:'+1.56%'},
   ];
   const el=document.getElementById('fin-etf');
-  el.innerHTML='<div style="padding:8px 0;font-size:13px;color:#666">今日ETF涨幅榜：</div>';
-  etfs.forEach((e,i)=>{
+  el.innerHTML='<div style="padding:8px 0;font-size:13px;color:#666">今日ETF涨幅榜（每日自动更新）：</div>';
+  etfs.slice(0,10).forEach((e,i)=>{
     const div=document.createElement('div');
     div.className='fin-card';
-    div.innerHTML=`<span class="pct up">${e.p}</span><div class="name">${i+1}. ${e.n}</div>`;
+    const pct = typeof e.p==='string' ? e.p : (e.c>=0?'+':'')+e.c+'%';
+    const up = (typeof e.p==='string' ? e.p.startsWith('+') : e.c>=0);
+    div.innerHTML=`<span class="pct ${up?'up':'down'}">${pct}</span><div class="name">${i+1}. ${e.n}</div>`;
     el.appendChild(div);
   });
 }
