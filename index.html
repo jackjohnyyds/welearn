@@ -233,7 +233,7 @@ function openDetail(title, body, sourceUrl, isEnglish){
 function closeDetail(){document.getElementById('mask').classList.remove('show')}
 
 async function loadArticles(){
-  const englio=[
+  const fallback=[
     {t:"I followed Beatrix Potter's routine (cosy day in English Countryside)",zh:'我模仿碧雅翠丝·波特的日常（英国乡村惬意一天）',cat:'文化',src:'englio·B1',link:'https://englio.ai/article/89a4209f-974a-4d66-ac21-939da26ed7a2'},
     {t:"The US-China Race to Establish Permanent Moon Bases",zh:'中美争夺建立永久月球基地',cat:'科技',src:'englio·C1',link:'https://englio.ai/article/115037cd-e9bc-4b45-a4cb-0b0538ba1db0'},
     {t:"Finding Pi in Randomness: Three Mathematical Methods",zh:'在随机性中寻找圆周率：三种数学方法',cat:'科技',src:'englio·B2',link:'https://englio.ai/article/d877842a-c35f-4a64-9b7e-4362a6a71586'},
@@ -247,6 +247,12 @@ async function loadArticles(){
     {t:"AI and Robots Revolutionize Biological Experimentation",zh:'AI与机器人革新生物实验',cat:'科技',src:'englio·B2',link:'https://englio.ai/article/529892cd-dad4-458d-8ceb-0023790295de'},
     {t:"Record Winter Heat in the U.S. and Climate Change Impacts",zh:'美国冬季创纪录高温与气候变化影响',cat:'环境',src:'englio·B1',link:'https://englio.ai/article/e78a1c14-87e2-4a7b-9a7f-46b9678c3c8e'},
   ];
+  let englio=fallback;
+  try{
+    const r=await fetch('articles.json?t='+Date.now());
+    const d=await r.json();
+    if(d.items && d.items.length) englio=d.items.slice(0,12);
+  }catch(e){}
   const feeds=[['https://feeds.npr.org/1001/rss.xml','NPR','c1']];
   const all=[];
   englio.forEach(a=>all.push({title:a.t,zh:a.zh,cat:a.cat,source:a.src,c:'c3',link:a.link,desc:''}));
