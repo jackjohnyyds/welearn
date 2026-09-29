@@ -10,11 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Trigger Pages rebuild
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch englio articles (daily)
+        run: python3 scripts/fetch_articles.py
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          echo "# Daily refresh $(date -u '+%Y-%m-%d %H:%M UTC')" >> README.md
-          git add README.md
-          git commit -m "chore: daily 8am refresh" || echo "nothing to commit"
+          git add articles.json
+          git commit -m "chore: daily article refresh $(date -u '+%Y-%m-%d %H:%M UTC')" || echo "nothing to commit"
           git push
