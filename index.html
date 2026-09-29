@@ -234,18 +234,18 @@ function closeDetail(){document.getElementById('mask').classList.remove('show')}
 
 async function loadArticles(){
   const englio=[
-    {t:"I followed Beatrix Potter's routine (cosy day in English Countryside)",zh:'我模仿碧雅翠丝·波特的日常（英国乡村惬意一天）',cat:'文化',src:'englio·B1',link:'https://englio.ai/explore'},
-    {t:"Should we pay more for chocolate? 6 Minute English",zh:'我们该为巧克力付更多钱吗？6分钟英语',cat:'经济',src:'englio·B1',link:'https://englio.ai/explore'},
-    {t:"The US-China Race to Establish Permanent Moon Bases",zh:'中美争夺建立永久月球基地',cat:'科技',src:'englio·C1',link:'https://englio.ai/explore'},
-    {t:"Finding Pi in Randomness: Three Mathematical Methods",zh:'在随机性中寻找圆周率：三种数学方法',cat:'科技',src:'englio·B2',link:'https://englio.ai/explore'},
-    {t:"GPS Spoofing in the Strait of Hormuz: A Navigation Crisis",zh:'霍尔木兹海峡GPS欺骗：导航危机',cat:'科技',src:'englio·C1',link:'https://englio.ai/explore'},
-    {t:"Dolphin Stranding Mystery Solved: Orcas as Culprits",zh:'海豚搁浅之谜破解：虎鲸是元凶',cat:'环境',src:'englio·B1',link:'https://englio.ai/explore'},
-    {t:"NASA Targets April 1 for Artemis II Moon Mission",zh:'NASA计划4月1日发射阿耳忒弥斯二号登月任务',cat:'科技',src:'englio·B2',link:'https://englio.ai/explore'},
-    {t:"Raccoons Solve Puzzles for Fun: Study Reveals Information Foraging",zh:'浣熊为乐趣解谜：研究揭示信息觅食行为',cat:'科技',src:'englio·B2',link:'https://englio.ai/explore'},
-    {t:"The Mystery of the Runaway Black Hole",zh:'失控黑洞之谜',cat:'科技',src:'englio·C1',link:'https://englio.ai/explore'},
-    {t:"AI and Robots Revolutionize Biological Experimentation",zh:'AI与机器人革新生物实验',cat:'科技',src:'englio·B2',link:'https://englio.ai/explore'},
-    {t:"China Approves First Commercial Brain Implant for Spinal Cord Injuries",zh:'中国批准首个治疗脊髓损伤的商用脑植入物',cat:'健康',src:'englio·C1',link:'https://englio.ai/explore'},
-    {t:"Record Winter Heat in the U.S. and Climate Change Impacts",zh:'美国冬季创纪录高温与气候变化影响',cat:'环境',src:'englio·B1',link:'https://englio.ai/explore'},
+    {t:"I followed Beatrix Potter's routine (cosy day in English Countryside)",zh:'我模仿碧雅翠丝·波特的日常（英国乡村惬意一天）',cat:'文化',src:'englio·B1',link:'https://englio.ai/article/89a4209f-974a-4d66-ac21-939da26ed7a2'},
+    {t:"The US-China Race to Establish Permanent Moon Bases",zh:'中美争夺建立永久月球基地',cat:'科技',src:'englio·C1',link:'https://englio.ai/article/115037cd-e9bc-4b45-a4cb-0b0538ba1db0'},
+    {t:"Finding Pi in Randomness: Three Mathematical Methods",zh:'在随机性中寻找圆周率：三种数学方法',cat:'科技',src:'englio·B2',link:'https://englio.ai/article/d877842a-c35f-4a64-9b7e-4362a6a71586'},
+    {t:"GPS Spoofing in the Strait of Hormuz: A Navigation Crisis",zh:'霍尔木兹海峡GPS欺骗：导航危机',cat:'科技',src:'englio·C1',link:'https://englio.ai/article/167c1fa9-78e7-4a7a-abac-28c502fcb1cc'},
+    {t:"Dolphin Stranding Mystery Solved: Orcas as Culprits",zh:'海豚搁浅之谜破解：虎鲸是元凶',cat:'环境',src:'englio·B1',link:'https://englio.ai/article/8faf496e-0f73-455e-bcf1-8321b93a0656'},
+    {t:"NASA Targets April 1 for Artemis II Moon Mission",zh:'NASA计划4月1日发射阿耳忒弥斯二号登月任务',cat:'科技',src:'englio·B2',link:'https://englio.ai/article/e866b236-0c4b-4829-873d-0e4c6e00f76a'},
+    {t:"Mathematicians Unify Centuries of Pi Formulas Through AI-Discovered Structure",zh:'数学家通过AI发现的结构统一了百年π公式',cat:'科技',src:'englio·B2',link:'https://englio.ai/article/d8a738a0-a9a6-4a5d-986f-c05a607ae076'},
+    {t:"Raccoons Solve Puzzles for Fun: Study Reveals Information Foraging",zh:'浣熊为乐趣解谜：研究揭示信息觅食行为',cat:'科技',src:'englio·B2',link:'https://englio.ai/article/2339c72d-2e5a-4d88-9a0a-e161ac56a55b'},
+    {t:"The Mystery of the Runaway Black Hole",zh:'失控黑洞之谜',cat:'科技',src:'englio·C1',link:'https://englio.ai/article/fdd2728b-3bde-4ec0-a95b-098e70bbc0bb'},
+    {t:"Why Friday the 13th is a Mathematical Inevitability",zh:'为什么13号星期五在数学上不可避免',cat:'科技',src:'englio·B2',link:'https://englio.ai/article/14b76704-74c0-47f1-a4f1-4c638517b1bb'},
+    {t:"AI and Robots Revolutionize Biological Experimentation",zh:'AI与机器人革新生物实验',cat:'科技',src:'englio·B2',link:'https://englio.ai/article/529892cd-dad4-458d-8ceb-0023790295de'},
+    {t:"Record Winter Heat in the U.S. and Climate Change Impacts",zh:'美国冬季创纪录高温与气候变化影响',cat:'环境',src:'englio·B1',link:'https://englio.ai/article/e78a1c14-87e2-4a7b-9a7f-46b9678c3c8e'},
   ];
   const feeds=[['https://feeds.npr.org/1001/rss.xml','NPR','c1']];
   const all=[];
@@ -270,14 +270,14 @@ async function loadArticles(){
 
 async function loadListening(){
   const cet6=[
-    {t:'2024年6月六级真题（第1套）',time:'2024.6',url:'https://www.wehuster.com/cet6/202406-1.html'},
-    {t:'2024年6月六级真题（第2套）',time:'2024.6',url:'https://www.wehuster.com/cet6/202406-2.html'},
-    {t:'2023年12月六级真题（第1套）',time:'2023.12',url:'https://www.wehuster.com/cet6/202312-1.html'},
-    {t:'2023年12月六级真题（第2套）',time:'2023.12',url:'https://www.wehuster.com/cet6/202312-2.html'},
-    {t:'2023年6月六级真题（第1套）',time:'2023.6',url:'https://www.wehuster.com/cet6/202306-1.html'},
-    {t:'2023年6月六级真题（第2套）',time:'2023.6',url:'https://www.wehuster.com/cet6/202306-2.html'},
-    {t:'2022年12月六级真题（第1套）',time:'2022.12',url:'https://www.wehuster.com/cet6/202212-1.html'},
-    {t:'2022年12月六级真题（第2套）',time:'2022.12',url:'https://www.wehuster.com/cet6/202212-2.html'},
+    {t:'2024年6月六级真题（第1套）',time:'2024.6',url:'https://m.tingroom.com/?mid=3&aid=39655'},
+    {t:'2024年6月六级真题（第2套）',time:'2024.6',url:'https://m.tingroom.com/?mid=3&aid=39655'},
+    {t:'2023年12月六级真题（第1套）',time:'2023.12',url:'https://m.tingroom.com/?mid=3&aid=39655'},
+    {t:'2023年12月六级真题（第2套）',time:'2023.12',url:'https://m.tingroom.com/?mid=3&aid=39655'},
+    {t:'2023年6月六级真题（第1套）',time:'2023.6',url:'https://m.tingroom.com/?mid=3&aid=39655'},
+    {t:'2023年6月六级真题（第2套）',time:'2023.6',url:'https://m.tingroom.com/?mid=3&aid=39655'},
+    {t:'2022年12月六级真题（第1套）',time:'2022.12',url:'https://m.tingroom.com/?mid=3&aid=39655'},
+    {t:'2022年12月六级真题（第2套）',time:'2022.12',url:'https://m.tingroom.com/?mid=3&aid=39655'},
   ];
   const tingroom=[
     {t:'74 Grandparents Are Great',src:'听 Room·入门',url:'https://m.tingroom.com/?mid=3&aid=570255'},
