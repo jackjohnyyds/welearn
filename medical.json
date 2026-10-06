@@ -1,10 +1,20 @@
 {
- "updated": "2026-10-05 05:10 UTC",
+ "updated": "2026-10-06 05:56 UTC",
  "bmj": [
+  {
+   "t": "Cutaneous leukocytoclastic vasculitis with concurrent colitis of uncertain aetiology",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e264024?rss=1",
+   "desc": "BMJ Case Reports · Yaw, V. P. X., Korani, M., Anowar, R., N"
+  },
   {
    "t": "First-trimester pregnancy-associated breast cancer managed without pregnancy termination: a report with long-term follow-up",
    "link": "http://casereports.bmj.com/cgi/content/short/19/10/e264704?rss=1",
    "desc": "BMJ Case Reports · Vorapreechapanich, A., Uerpairojkit, B.,"
+  },
+  {
+   "t": "Boomerang-shaped extended latissimus dorsi flap for combined breast reconstruction and body contouring following massive weight loss",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e266811?rss=1",
+   "desc": "BMJ Case Reports · Sorensen, R., Chakari, W., Sorensen, J. "
   },
   {
    "t": "Primary tongue leiomyosarcoma",
@@ -17,60 +27,50 @@
    "desc": "BMJ Case Reports · Mahboob, O., Suk, Y., Bishara, M., Moamm"
   },
   {
+   "t": "Fatal drug-induced liver injury in the setting of abemaciclib therapy for metastatic breast cancer",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e268777?rss=1",
+   "desc": "BMJ Case Reports · Vengilote, R., Ehsanullah, S. U., Patel,"
+  },
+  {
    "t": "Insights into diagnosis and management of giant adrenal pseudocysts",
    "link": "http://casereports.bmj.com/cgi/content/short/19/10/e269118?rss=1",
    "desc": "BMJ Case Reports · Jawaada, A., Lehmann, J., Klang, P., Gal"
   },
   {
-   "t": "Primary malignant mesothelioma of the tunica vaginalis presenting as hydrocele: imaging pitfalls",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e270259?rss=1",
-   "desc": "BMJ Case Reports · Naidu, J., Joseph, N. G., Mohammed, M., "
-  },
-  {
-   "t": "Retroperitoneal urinoma presenting as a posterior knee sinus following emphysematous pyelitis",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e271084?rss=1",
-   "desc": "BMJ Case Reports · Alshahwani, I., Connolly, M. G., Al-Harf"
-  },
-  {
-   "t": "Mastectomy and sentinel lymph node biopsy in a patient with left-sided breast cancer and Poland syndrome",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e274594?rss=1",
-   "desc": "BMJ Case Reports · Paaskesen, C. K., Mohammad, M., Totakhai"
-  },
-  {
-   "t": "Paraneoplastic dermatomyositis preceding detection of metastatic oesophageal squamous cell carcinoma after prolonged remission following pembrolizumab therapy",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e275507?rss=1",
-   "desc": "BMJ Case Reports · Hassan, S. A., Hazarika, K., Rai, P. K."
+   "t": "Iatrogenic Cushings syndrome from an adulterated glucocorticoid-containing supplement",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e269314?rss=1",
+   "desc": "BMJ Case Reports · Darapu, H., Gokul, S."
   }
  ],
  "pubmed": [
   {
-   "t": "Radiographic Identification of Gold Threading: A clinical case study.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42830271/",
+   "t": "Neuromyelitis optica spectrum disorder with positive anti-aquaporin-4 antibodies in the context of long-standing rheumat",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42833981/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Mitral Valve Transplantation: a valuable option?",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42830188/",
+   "t": "Dedicated speech and language therapist in the ICU: a one-year experience in a tertiary hospital in Italy.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42833979/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Intraventricular Vancomycin for Ommaya Reservoir-Associated Staphylococcus hominis Ventriculitis in a Very Preterm Infan",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42830183/",
+   "t": "When the remedy becomes the illness: differentiating hyperemesis gravidarum versus cannabinoid hyperemesis syndrome in p",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42833911/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Pancreatic Source of Staphylococcus aureus Bacteremia.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42830143/",
+   "t": "Navigating the unexpected: management of incidental severe Factor V deficiency in term pregnancy.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42833854/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "INDICATIONS FOR REMOVAL OF A PORT SYSTEM IN A PATIENT WITH SUSPECTED SEPTICEMIA IN THE ABSENCE OF OTHER LOCAL SOURCES OF",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42830080/",
+   "t": "Adrenal metastasis from papillary thyroid cancer: staged surgical resection.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42833853/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "PSOAS MUSCLE ABSCESS FOLLOWING CESAREAN SECTION: A CASE REPORT.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42830070/",
+   "t": "Gastrointestinal manifestations of IgA vasculitis guiding treatment in an adult patient.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42833852/",
    "desc": "PubMed 最新病例报告"
   }
  ]
