@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06 05:56 UTC",
+ "updated": "2026-10-07 05:30 UTC",
  "bmj": [
   {
    "t": "Cutaneous leukocytoclastic vasculitis with concurrent colitis of uncertain aetiology",
@@ -10,6 +10,11 @@
    "t": "First-trimester pregnancy-associated breast cancer managed without pregnancy termination: a report with long-term follow-up",
    "link": "http://casereports.bmj.com/cgi/content/short/19/10/e264704?rss=1",
    "desc": "BMJ Case Reports · Vorapreechapanich, A., Uerpairojkit, B.,"
+  },
+  {
+   "t": "Surgical and orthodontic management of class III malocclusion in monozygotic twins using bilateral sagittal split osteotomy",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e266018?rss=1",
+   "desc": "BMJ Case Reports · Sharma, T., Sharma, S., Singla, A., Puri"
   },
   {
    "t": "Boomerang-shaped extended latissimus dorsi flap for combined breast reconstruction and body contouring following massive weight loss",
@@ -35,42 +40,37 @@
    "t": "Insights into diagnosis and management of giant adrenal pseudocysts",
    "link": "http://casereports.bmj.com/cgi/content/short/19/10/e269118?rss=1",
    "desc": "BMJ Case Reports · Jawaada, A., Lehmann, J., Klang, P., Gal"
-  },
-  {
-   "t": "Iatrogenic Cushings syndrome from an adulterated glucocorticoid-containing supplement",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e269314?rss=1",
-   "desc": "BMJ Case Reports · Darapu, H., Gokul, S."
   }
  ],
  "pubmed": [
   {
-   "t": "Neuromyelitis optica spectrum disorder with positive anti-aquaporin-4 antibodies in the context of long-standing rheumat",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42833981/",
+   "t": "Approach to management of walled-off necrosis secondary to trauma-induced pancreatitis in a limited-resource setting.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42838710/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Dedicated speech and language therapist in the ICU: a one-year experience in a tertiary hospital in Italy.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42833979/",
+   "t": "Immune-related colitis following head and neck reconstructive surgery in a patient receiving long-term nivolumab.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42838709/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "When the remedy becomes the illness: differentiating hyperemesis gravidarum versus cannabinoid hyperemesis syndrome in p",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42833911/",
+   "t": "Surgical and orthodontic management of class III malocclusion in monozygotic twins using bilateral sagittal split osteot",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42838708/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Navigating the unexpected: management of incidental severe Factor V deficiency in term pregnancy.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42833854/",
+   "t": "Hepatitis A-associated oxidative haemolysis in a patient with glucose-6-phosphate dehydrogenase deficiency with co-inher",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42838707/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Adrenal metastasis from papillary thyroid cancer: staged surgical resection.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42833853/",
+   "t": "Duplicated spermatic cord encountered during inguinal hernia repair.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42838706/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Gastrointestinal manifestations of IgA vasculitis guiding treatment in an adult patient.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42833852/",
+   "t": "Adamantinoma-like Ewing sarcoma of the bladder.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42838705/",
    "desc": "PubMed 最新病例报告"
   }
  ]
