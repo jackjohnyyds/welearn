@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07 05:30 UTC",
+ "updated": "2026-10-08 04:49 UTC",
  "bmj": [
   {
    "t": "Cutaneous leukocytoclastic vasculitis with concurrent colitis of uncertain aetiology",
@@ -17,6 +17,11 @@
    "desc": "BMJ Case Reports · Sharma, T., Sharma, S., Singla, A., Puri"
   },
   {
+   "t": "Complex presentation of neonatal arthrogryposis multiplex congenita: insights into a multifactorial disorder",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e266256?rss=1",
+   "desc": "BMJ Case Reports · Botsa, S., Hansoge, S. S., Banait, N., K"
+  },
+  {
    "t": "Boomerang-shaped extended latissimus dorsi flap for combined breast reconstruction and body contouring following massive weight loss",
    "link": "http://casereports.bmj.com/cgi/content/short/19/10/e266811?rss=1",
    "desc": "BMJ Case Reports · Sorensen, R., Chakari, W., Sorensen, J. "
@@ -27,50 +32,45 @@
    "desc": "BMJ Case Reports · Gupta, A. K., Devnani, B., Poonia, D. R."
   },
   {
+   "t": "Silent danger behind the forehead: Potts puffy tumour presenting without systemic symptoms",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e267764?rss=1",
+   "desc": "BMJ Case Reports · Rodrigues, A. R., Duarte, D., Oliveira, "
+  },
+  {
    "t": "Malignant phyllodes tumour with spinal metastasis presenting as cauda equina syndrome",
    "link": "http://casereports.bmj.com/cgi/content/short/19/10/e268151?rss=1",
    "desc": "BMJ Case Reports · Mahboob, O., Suk, Y., Bishara, M., Moamm"
-  },
-  {
-   "t": "Fatal drug-induced liver injury in the setting of abemaciclib therapy for metastatic breast cancer",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e268777?rss=1",
-   "desc": "BMJ Case Reports · Vengilote, R., Ehsanullah, S. U., Patel,"
-  },
-  {
-   "t": "Insights into diagnosis and management of giant adrenal pseudocysts",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e269118?rss=1",
-   "desc": "BMJ Case Reports · Jawaada, A., Lehmann, J., Klang, P., Gal"
   }
  ],
  "pubmed": [
   {
-   "t": "Approach to management of walled-off necrosis secondary to trauma-induced pancreatitis in a limited-resource setting.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42838710/",
+   "t": "Analytical differences in patients with PFAPA during an episode versus an asymptomatic state, beyond acute-phase reagent",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42844117/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Immune-related colitis following head and neck reconstructive surgery in a patient receiving long-term nivolumab.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42838709/",
+   "t": "Ten-Year Trends in Patient Profiles Admitted to Inpatient Pulmonary Rehabilitation.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42844076/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Surgical and orthodontic management of class III malocclusion in monozygotic twins using bilateral sagittal split osteot",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42838708/",
+   "t": "Nocturnal Hypoxia in Obstructive Sleep Apnoea is Associated With Periventricular Rather Than Deep Subcortical White Matt",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42844075/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Hepatitis A-associated oxidative haemolysis in a patient with glucose-6-phosphate dehydrogenase deficiency with co-inher",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42838707/",
+   "t": "Fooled by the Heartbeat: Cardioballistic Autotriggering in Amyotrophic Lateral Sclerosis.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42844074/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Duplicated spermatic cord encountered during inguinal hernia repair.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42838706/",
+   "t": "Eumycetoma at an unusual site.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42844045/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Adamantinoma-like Ewing sarcoma of the bladder.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42838705/",
+   "t": "Infection of an implantable automatic defibrillator due to Pasteurella multocida.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42844044/",
    "desc": "PubMed 最新病例报告"
   }
  ]
