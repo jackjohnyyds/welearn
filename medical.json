@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09 11:13 UTC",
+ "updated": "2026-10-10 04:07 UTC",
  "bmj": [
   {
    "t": "Cutaneous leukocytoclastic vasculitis with concurrent colitis of uncertain aetiology",
@@ -12,6 +12,11 @@
    "desc": "BMJ Case Reports · Vorapreechapanich, A., Uerpairojkit, B.,"
   },
   {
+   "t": "Reversible cerebral vasoconstriction syndrome following selective serotonin reuptake inhibitor use",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e265927?rss=1",
+   "desc": "BMJ Case Reports · Datta, A. K., Mukherjee, A."
+  },
+  {
    "t": "Surgical and orthodontic management of class III malocclusion in monozygotic twins using bilateral sagittal split osteotomy",
    "link": "http://casereports.bmj.com/cgi/content/short/19/10/e266018?rss=1",
    "desc": "BMJ Case Reports · Sharma, T., Sharma, S., Singla, A., Puri"
@@ -22,6 +27,11 @@
    "desc": "BMJ Case Reports · Botsa, S., Hansoge, S. S., Banait, N., K"
   },
   {
+   "t": "Reactive nodular fibrous pseudotumour in the intestinal wall",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e266750?rss=1",
+   "desc": "BMJ Case Reports · Javalgi, A. P., Ibrahim Ali, S., Tubachi"
+  },
+  {
    "t": "Boomerang-shaped extended latissimus dorsi flap for combined breast reconstruction and body contouring following massive weight loss",
    "link": "http://casereports.bmj.com/cgi/content/short/19/10/e266811?rss=1",
    "desc": "BMJ Case Reports · Sorensen, R., Chakari, W., Sorensen, J. "
@@ -30,47 +40,37 @@
    "t": "Primary tongue leiomyosarcoma",
    "link": "http://casereports.bmj.com/cgi/content/short/19/10/e267646?rss=1",
    "desc": "BMJ Case Reports · Gupta, A. K., Devnani, B., Poonia, D. R."
-  },
-  {
-   "t": "Silent danger behind the forehead: Potts puffy tumour presenting without systemic symptoms",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e267764?rss=1",
-   "desc": "BMJ Case Reports · Rodrigues, A. R., Duarte, D., Oliveira, "
-  },
-  {
-   "t": "Malignant phyllodes tumour with spinal metastasis presenting as cauda equina syndrome",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e268151?rss=1",
-   "desc": "BMJ Case Reports · Mahboob, O., Suk, Y., Bishara, M., Moamm"
   }
  ],
  "pubmed": [
   {
-   "t": "Case Report: Immune checkpoint inhibitor-induced gastrointestinal toxicity: the diagnostic challenge of sequential ileus",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42851379/",
+   "t": "Hepatic fascioliasis incidentally diagnosed through a surgical finding: A case report.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42855416/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Case Report: Discordance between RNA-identified ETV6::RET and clinically reportable DNA profiling in salivary gland secr",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42851375/",
+   "t": "Macroamylasemia: Differential diagnosis in persistent hyperamylasemia.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42855415/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Prostatic malakoplakia: a rare case report and literature review.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42851372/",
+   "t": "Solitary laryngeal plasmacytoma treated by TOMES: Case report and review of the literature.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42855335/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Case Report: dupilumab for severe pruritus in pediatric recessive dystrophic epidermolysis bullosa-a longitudinal clinic",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42851360/",
+   "t": "Primary Ciliary Dyskinesia in Adults With Bronchiectasis: Diagnostic Yield of Genetic Testing and Clinical Characterisat",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42855327/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Case Report: Site-specific therapy guided by the 90-gene expression assay in cancer of unknown primary: lenvatinib plus ",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42851335/",
+   "t": "Expanding the reproductive spectrum of congenital leptin deficiency: Spontaneous pregnancies and long-term metreleptin t",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42855325/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Clinical contribution of mNGS in the diagnosis and management of imported falciparum malaria in a malaria-free region: a",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42851315/",
+   "t": "Febrile renal pseudotumors revealing ANCA-associated vasculitis.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42855127/",
    "desc": "PubMed 最新病例报告"
   }
  ]
