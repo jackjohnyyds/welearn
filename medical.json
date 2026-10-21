@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20 09:18 UTC",
+ "updated": "2026-10-21 09:14 UTC",
  "bmj": [
   {
    "t": "Cutaneous leukocytoclastic vasculitis with concurrent colitis of uncertain aetiology",
@@ -10,6 +10,11 @@
    "t": "First-trimester pregnancy-associated breast cancer managed without pregnancy termination: a report with long-term follow-up",
    "link": "http://casereports.bmj.com/cgi/content/short/19/10/e264704?rss=1",
    "desc": "BMJ Case Reports · Vorapreechapanich, A., Uerpairojkit, B.,"
+  },
+  {
+   "t": "Rare sinonasal glomangiopericytoma: clinical and histopathological insights",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e265818?rss=1",
+   "desc": "BMJ Case Reports · Sorrentino, J., Rosi-Schumacher, M., Ste"
   },
   {
    "t": "Reversible cerebral vasoconstriction syndrome following selective serotonin reuptake inhibitor use",
@@ -27,50 +32,45 @@
    "desc": "BMJ Case Reports · Botsa, S., Hansoge, S. S., Banait, N., K"
   },
   {
+   "t": "Gastric mucosal calcinosis: abnormal calcium deposition in a haemodialysis patient",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e266730?rss=1",
+   "desc": "BMJ Case Reports · Jones, R. T., Bingham, C., Rogers, J., H"
+  },
+  {
    "t": "Reactive nodular fibrous pseudotumour in the intestinal wall",
    "link": "http://casereports.bmj.com/cgi/content/short/19/10/e266750?rss=1",
    "desc": "BMJ Case Reports · Javalgi, A. P., Ibrahim Ali, S., Tubachi"
-  },
-  {
-   "t": "Boomerang-shaped extended latissimus dorsi flap for combined breast reconstruction and body contouring following massive weight loss",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e266811?rss=1",
-   "desc": "BMJ Case Reports · Sorensen, R., Chakari, W., Sorensen, J. "
-  },
-  {
-   "t": "Clinical application of the Vojta approach and multimodal stimulation in a neonate with respiratory distress syndrome",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/10/e267083?rss=1",
-   "desc": "BMJ Case Reports · Hullumani, S., Qureshi, I."
   }
  ],
  "pubmed": [
   {
-   "t": "Expanding the Genotypic and Phenotypic Spectrum of Li-Campeau Syndrome: A Homozygous Single-Exon Deletion in UBR7.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42897110/",
+   "t": "C3 Glomerulopathy in Autoinflammatory-Pancytopenia Syndrome: A Case Report.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42901880/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Absent Septum Pellucidum Without Polymicrogyria or Seizures in TCP1-Related Neurodevelopmental Disorder.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42897101/",
+   "t": "The Case | A man with kidney failure and an unusual abdominal CT scan.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42901692/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Partial Echocardiographic Remission After Sotatercept: Expanding Treatment Goals in Pulmonary Arterial Hypertension.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42897073/",
+   "t": "The Case | Pulmonary nodules and acute kidney injury.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42901691/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "A Case of Alopecia Secondary to Dupilumab in a Patient With Atopic Dermatitis.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42896905/",
+   "t": "Feasibility and results of the implementation of a post-discharge coordination circuit for patients with acute heart fai",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42901471/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Reconstruction of surgical defects using ultrathin skin graft strips harvested with DermaBlade® and secured exclusively ",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42896822/",
+   "t": "Veno-arterial ECMO for the management of propofol infusion syndrome following cardiac surgery.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42901307/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "A case of feline sparganosis caused by Spirometra asiana (Cestoda: Diphyllobothriidae) discovered during left forelimb a",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42896698/",
+   "t": "Implant-Assisted Stabilization of a Customized Three-Dimensional-Printed Titanium Mesh for Guided Bone Regeneration in M",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42901219/",
    "desc": "PubMed 最新病例报告"
   }
  ]
