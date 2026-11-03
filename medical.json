@@ -1,10 +1,25 @@
 {
- "updated": "2026-11-02 12:09 UTC",
+ "updated": "2026-11-03 11:45 UTC",
  "bmj": [
+  {
+   "t": "Wernickes encephalopathy in an adolescent with avoidant restrictive food intake disorder, juvenile dermatomyositis, attention-deficit hyperactivity disorder, generalised anxiety disorder and a complex psychosocial background",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271668?rss=1",
+   "desc": "BMJ Case Reports · Foradori, D. M., Denuit, S., Senitz, T.,"
+  },
+  {
+   "t": "Hairy kidneys, heavy heart: Erdheim-Chester disease presenting with large pericardial effusion",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271973?rss=1",
+   "desc": "BMJ Case Reports · Zhu, Q. M., Balmaceda, A. M., Lumia, S.,"
+  },
   {
    "t": "Asymmetric presentation of bilateral endogenous endophthalmitis in disseminated Klebsiella pneumoniae infection",
    "link": "http://casereports.bmj.com/cgi/content/short/19/11/e272495?rss=1",
    "desc": "BMJ Case Reports · Chanda, U. L., Mirza, M., Baker, D., Abd"
+  },
+  {
+   "t": "Navigating the 'known unknowns and grey zone of pacing for profound cardioinhibitory vasovagal syncope",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e272731?rss=1",
+   "desc": "BMJ Case Reports · How, W. J., Ngo, V., Holt, C., Malik, N."
   },
   {
    "t": "Eosinophilic dermatosis as the initial presentation for Janus Kinase 2 positive chronic myelomonocytic leukaemia",
@@ -25,52 +40,37 @@
    "t": "Management of recurrent medial ankle pain after total ankle replacement arthroplasty: the role of medial malleolar anterolateral corner resection in resolving bone-to-implant impingement",
    "link": "http://casereports.bmj.com/cgi/content/short/19/11/e274932?rss=1",
    "desc": "BMJ Case Reports · Jung, S. O., Suh, J. S., Choi, J. Y."
-  },
-  {
-   "t": "Radiologically malignant but histologically benign: clear cell hidradenoma of the breast",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e275112?rss=1",
-   "desc": "BMJ Case Reports · Foo, E. F., Molyneux, A., Soulsby, R."
-  },
-  {
-   "t": "Epiphora as the only symptom of ectopic olfactory neuroblastoma",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e275143?rss=1",
-   "desc": "BMJ Case Reports · Chin, C., Bullock, M., Darwish, Y., Al A"
-  },
-  {
-   "t": "Tuck-in fibrin glue-assisted sutureless scleroplasty for post-pterygium surgery surgically induced necrotising scleritis: a novel technique",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e275489?rss=1",
-   "desc": "BMJ Case Reports · Goyal, D., Khandelwal, H., Sahay, P., Sh"
   }
  ],
  "pubmed": [
   {
-   "t": "Angiographically Occult Perforator Ischemia Detected by Motor-Evoked Potential Monitoring during Woven EndoBridge Deploy",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42969007/",
+   "t": "Nasal glomangiomyoma: a case report and review of superficial facial glomus tumors.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42973522/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Gastrostomy as an Adjunctive Gastropexy in Recurrent Congenital Diaphragmatic Hernia with Repeated Gastric Herniation: A",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42969004/",
+   "t": "Surgical resection combined with TACE for primary clear cell carcinoma of the liver: a case report and literature review",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42973520/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Probable Rapid Eye Movement Sleep Behavior Disorder Associated With Escitalopram in a Patient With Schizoaffective Disor",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42968983/",
+   "t": "Case Report: Long-term survival in FIGO stage IVB small cell carcinoma of the ovary, pulmonary type following complete c",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42973516/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "A Rare Case of Cystic Bronchiectasis With Concurrent Pulmonary Aspergillosis in a Rheumatoid Arthritis Patient Receiving",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42968981/",
+   "t": "Case Report: Primary splenic angiosarcoma: a case report and literature review.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42973510/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Localized Morbilliform Drug Eruption Following Sildenafil Exposure: A Case Report.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42968972/",
+   "t": "Case Report: Successful treatment of drug-resistant epilepsy with unilateral deep brain stimulation of the anterior nucl",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42973508/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Paget-Schroetter Syndrome With Focal Subclavian Arterial Stenosis Following Repetitive Overhead Activity: A Case Report.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42968971/",
+   "t": "Neoadjuvant pembrolizumab plus nimotuzumab as a bridge to surgery in a frail elderly patient with maxillary gingival and",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42973506/",
    "desc": "PubMed 最新病例报告"
   }
  ]
