@@ -1,6 +1,11 @@
 {
- "updated": "2026-11-03 11:45 UTC",
+ "updated": "2026-11-04 11:57 UTC",
  "bmj": [
+  {
+   "t": "Case of post-transplant lymphoproliferative disorder presenting as EBV-negative intravascular large B-cell lymphoma",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e270491?rss=1",
+   "desc": "BMJ Case Reports · Kahandawala Arachchige, N. K., Mushtaq, "
+  },
   {
    "t": "Wernickes encephalopathy in an adolescent with avoidant restrictive food intake disorder, juvenile dermatomyositis, attention-deficit hyperactivity disorder, generalised anxiety disorder and a complex psychosocial background",
    "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271668?rss=1",
@@ -10,6 +15,11 @@
    "t": "Hairy kidneys, heavy heart: Erdheim-Chester disease presenting with large pericardial effusion",
    "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271973?rss=1",
    "desc": "BMJ Case Reports · Zhu, Q. M., Balmaceda, A. M., Lumia, S.,"
+  },
+  {
+   "t": "Breast cancer metastasis to the gallbladder",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e272383?rss=1",
+   "desc": "BMJ Case Reports · Phun, J., Krause, K., Tsouknidas, I., Lo"
   },
   {
    "t": "Asymmetric presentation of bilateral endogenous endophthalmitis in disseminated Klebsiella pneumoniae infection",
@@ -27,50 +37,40 @@
    "desc": "BMJ Case Reports · Anand, A., Shi, Y., Xiao, Z."
   },
   {
-   "t": "Fetal intraventricular haemorrhage in severe congenital protein C deficiency",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e273866?rss=1",
-   "desc": "BMJ Case Reports · Pradhan, M., Agnihotri, K., Khergade, M."
-  },
-  {
-   "t": "Pneumatocele following hydrocarbon glue aspiration",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e274764?rss=1",
-   "desc": "BMJ Case Reports · Vermoesen, P., Deschepper, K., Jerjir, N"
-  },
-  {
-   "t": "Management of recurrent medial ankle pain after total ankle replacement arthroplasty: the role of medial malleolar anterolateral corner resection in resolving bone-to-implant impingement",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e274932?rss=1",
-   "desc": "BMJ Case Reports · Jung, S. O., Suh, J. S., Choi, J. Y."
+   "t": "Immune complex membranoproliferative glomerulonephritis with C3 and IgG-dominant immunohistochemistry staining associated with seronegative myasthenia gravis",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e273214?rss=1",
+   "desc": "BMJ Case Reports · Khoo, A., Gavrilescu, N., Pham, A., Robs"
   }
  ],
  "pubmed": [
   {
-   "t": "Nasal glomangiomyoma: a case report and review of superficial facial glomus tumors.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42973522/",
+   "t": "Adrenocortical Carcinoma Presenting With Concurrent Cushing Syndrome and Primary Hyperaldosteronism.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42979022/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Surgical resection combined with TACE for primary clear cell carcinoma of the liver: a case report and literature review",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42973520/",
+   "t": "Refractory Hypocalcemia Induced by Denosumab and Nab-Paclitaxel in a Patient With Metastatic Breast Cancer.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42979017/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Case Report: Long-term survival in FIGO stage IVB small cell carcinoma of the ovary, pulmonary type following complete c",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42973516/",
+   "t": "Bilateral Adrenal Masses, Extreme Catecholamine Excess, and Hypercalcitoninemia With Metastatic Neuroendocrine Neoplasia",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42979009/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Case Report: Primary splenic angiosarcoma: a case report and literature review.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42973510/",
+   "t": "Management and Follow-up of Sporadic Cribriform-Morular Thyroid Carcinoma After the 2022 World Health Organization Recla",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42979003/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Case Report: Successful treatment of drug-resistant epilepsy with unilateral deep brain stimulation of the anterior nucl",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42973508/",
+   "t": "Adrenal Crisis in an Adult Patient With Lipoid Congenital Adrenal Hyperplasia due to STAR Protein Mutation.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42978993/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Neoadjuvant pembrolizumab plus nimotuzumab as a bridge to surgery in a frail elderly patient with maxillary gingival and",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42973506/",
+   "t": "Tirzepatide for Severe Obesity in Adolescents Without Diabetes.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42978989/",
    "desc": "PubMed 最新病例报告"
   }
  ]
