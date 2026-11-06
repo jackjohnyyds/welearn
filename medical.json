@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04 11:57 UTC",
+ "updated": "2026-11-06 11:57 UTC",
  "bmj": [
   {
    "t": "Case of post-transplant lymphoproliferative disorder presenting as EBV-negative intravascular large B-cell lymphoma",
@@ -15,6 +15,11 @@
    "t": "Hairy kidneys, heavy heart: Erdheim-Chester disease presenting with large pericardial effusion",
    "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271973?rss=1",
    "desc": "BMJ Case Reports · Zhu, Q. M., Balmaceda, A. M., Lumia, S.,"
+  },
+  {
+   "t": "Type III congenital pulmonary airway malformation with multifocal mucinous metaplasia in a neonate",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e272207?rss=1",
+   "desc": "BMJ Case Reports · Das, P., Dixit, S., Anand, S., Verma, A."
   },
   {
    "t": "Breast cancer metastasis to the gallbladder",
@@ -35,42 +40,37 @@
    "t": "Eosinophilic dermatosis as the initial presentation for Janus Kinase 2 positive chronic myelomonocytic leukaemia",
    "link": "http://casereports.bmj.com/cgi/content/short/19/11/e273143?rss=1",
    "desc": "BMJ Case Reports · Anand, A., Shi, Y., Xiao, Z."
-  },
-  {
-   "t": "Immune complex membranoproliferative glomerulonephritis with C3 and IgG-dominant immunohistochemistry staining associated with seronegative myasthenia gravis",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e273214?rss=1",
-   "desc": "BMJ Case Reports · Khoo, A., Gavrilescu, N., Pham, A., Robs"
   }
  ],
  "pubmed": [
   {
-   "t": "Adrenocortical Carcinoma Presenting With Concurrent Cushing Syndrome and Primary Hyperaldosteronism.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42979022/",
+   "t": "Chemodectoma Arising From the Abdominal Aorta in a 9-Year-Old Female Dog: Clinical, Histopathological and Immunohistoche",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42988773/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Refractory Hypocalcemia Induced by Denosumab and Nab-Paclitaxel in a Patient With Metastatic Breast Cancer.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42979017/",
+   "t": "A Disseminated Adverse Drug Reaction in a Child in Response to Beta-Lactam Patch Testing.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42988722/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Bilateral Adrenal Masses, Extreme Catecholamine Excess, and Hypercalcitoninemia With Metastatic Neuroendocrine Neoplasia",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42979009/",
+   "t": "Diverse Phenotypic Consequences of the Differential Splicing of FLNA Intronic Variants.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42988619/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Management and Follow-up of Sporadic Cribriform-Morular Thyroid Carcinoma After the 2022 World Health Organization Recla",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42979003/",
+   "t": "Ablation of Twin Atrioventricular Node-Mediated Macroreentrant Tachycardia in a Patient With Complex Heterotaxy Syndrome",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42988617/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Adrenal Crisis in an Adult Patient With Lipoid Congenital Adrenal Hyperplasia due to STAR Protein Mutation.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42978993/",
+   "t": "Prenatal diagnosis of agenesis of the portal system type II Abernethy malformation associated with trisomy 21.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42988593/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Tirzepatide for Severe Obesity in Adolescents Without Diabetes.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42978989/",
+   "t": "Cervicofacial eumycetoma caused by Cladosporium cucumerinum in India: A rare molecularly confirmed case.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42988267/",
    "desc": "PubMed 最新病例报告"
   }
  ]
