@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06 11:57 UTC",
+ "updated": "2026-11-07 10:57 UTC",
  "bmj": [
   {
    "t": "Case of post-transplant lymphoproliferative disorder presenting as EBV-negative intravascular large B-cell lymphoma",
@@ -10,6 +10,11 @@
    "t": "Wernickes encephalopathy in an adolescent with avoidant restrictive food intake disorder, juvenile dermatomyositis, attention-deficit hyperactivity disorder, generalised anxiety disorder and a complex psychosocial background",
    "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271668?rss=1",
    "desc": "BMJ Case Reports · Foradori, D. M., Denuit, S., Senitz, T.,"
+  },
+  {
+   "t": "Mixed acinar adenocarcinoma and small-cell neuroendocrine carcinoma of the prostate with extensive skeletal and nodal metastases and preserved prostate-specific membrane antigen avidity",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271877?rss=1",
+   "desc": "BMJ Case Reports · Sharma, J. O., Bathija, N., Mahajan, R.,"
   },
   {
    "t": "Hairy kidneys, heavy heart: Erdheim-Chester disease presenting with large pericardial effusion",
@@ -32,45 +37,40 @@
    "desc": "BMJ Case Reports · Chanda, U. L., Mirza, M., Baker, D., Abd"
   },
   {
-   "t": "Navigating the 'known unknowns and grey zone of pacing for profound cardioinhibitory vasovagal syncope",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e272731?rss=1",
-   "desc": "BMJ Case Reports · How, W. J., Ngo, V., Holt, C., Malik, N."
-  },
-  {
-   "t": "Eosinophilic dermatosis as the initial presentation for Janus Kinase 2 positive chronic myelomonocytic leukaemia",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e273143?rss=1",
-   "desc": "BMJ Case Reports · Anand, A., Shi, Y., Xiao, Z."
+   "t": "Baxters neuropathy presenting as refractory heel pain: diagnostic challenges and treatment with radiofrequency ablation",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e272722?rss=1",
+   "desc": "BMJ Case Reports · Dudiak, G. J., Li, J. J., Shi, W., Annas"
   }
  ],
  "pubmed": [
   {
-   "t": "Chemodectoma Arising From the Abdominal Aorta in a 9-Year-Old Female Dog: Clinical, Histopathological and Immunohistoche",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42988773/",
+   "t": "Multidimensional Assessment of Patient-Reported Outcome Measures in Patients Receiving Long-Term Home Non-Invasive Venti",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42995112/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "A Disseminated Adverse Drug Reaction in a Child in Response to Beta-Lactam Patch Testing.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42988722/",
+   "t": "Enhanced Diagnosis and Management of Far-Out Syndrome Using 3D Visualization and Uni-Portal Non-Coaxial Spinal Endoscopi",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42994977/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Diverse Phenotypic Consequences of the Differential Splicing of FLNA Intronic Variants.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42988619/",
+   "t": "Triple immune impairment in an elderly patient with IgG4-AIP and MGUS complicated by dual severe infections over 3 years",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42994910/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Ablation of Twin Atrioventricular Node-Mediated Macroreentrant Tachycardia in a Patient With Complex Heterotaxy Syndrome",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42988617/",
+   "t": "Adrenal ganglioneuroma in an adolescent presenting as an incidentaloma: Imaging-pathology correlation and diagnostic cha",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42994909/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Prenatal diagnosis of agenesis of the portal system type II Abernethy malformation associated with trisomy 21.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42988593/",
+   "t": "Pulmonary sarcomatoid carcinoma with METex14 mutation and high PD-L1: A case report.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42994905/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Cervicofacial eumycetoma caused by Cladosporium cucumerinum in India: A rare molecularly confirmed case.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42988267/",
+   "t": "Glucocorticoid therapy for acute interstitial nephritis in a patient with diabetic nephropathy: A case report.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42994903/",
    "desc": "PubMed 最新病例报告"
   }
  ]
