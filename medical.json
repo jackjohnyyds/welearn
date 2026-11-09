@@ -1,10 +1,30 @@
 {
- "updated": "2026-11-08 11:09 UTC",
+ "updated": "2026-11-09 12:41 UTC",
  "bmj": [
+  {
+   "t": "Bilateral inflammatory optic neuropathy as a manifestation of immune dysregulation in common variable immunodeficiency",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e266562?rss=1",
+   "desc": "BMJ Case Reports · Karafotias, I., Adas, M., Russell, M., F"
+  },
+  {
+   "t": "Andersen-Tawil syndrome associated with a subclinical maternal carrier of a KCNJ2 mutation",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e270237?rss=1",
+   "desc": "BMJ Case Reports · Muthukumar, S., Suresh Babu, H. W., Iyer"
+  },
+  {
+   "t": "Symptomatic plateau waves in a patient with leptomeningeal metastases captured with quantitative electroencephalography and intracranial pressure monitoring",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e270251?rss=1",
+   "desc": "BMJ Case Reports · Gopinath, K., Renteria, I., Probelsky, S"
+  },
   {
    "t": "Case of post-transplant lymphoproliferative disorder presenting as EBV-negative intravascular large B-cell lymphoma",
    "link": "http://casereports.bmj.com/cgi/content/short/19/11/e270491?rss=1",
    "desc": "BMJ Case Reports · Kahandawala Arachchige, N. K., Mushtaq, "
+  },
+  {
+   "t": "Concurrent xanthogranulomatous lesions of the lower urinary tract",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e270732?rss=1",
+   "desc": "BMJ Case Reports · Castro, A. B., Yabut, F. B., Sy, K. H. C"
   },
   {
    "t": "Wernickes encephalopathy in an adolescent with avoidant restrictive food intake disorder, juvenile dermatomyositis, attention-deficit hyperactivity disorder, generalised anxiety disorder and a complex psychosocial background",
@@ -17,60 +37,40 @@
    "desc": "BMJ Case Reports · Sharma, J. O., Bathija, N., Mahajan, R.,"
   },
   {
-   "t": "Hairy kidneys, heavy heart: Erdheim-Chester disease presenting with large pericardial effusion",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271973?rss=1",
-   "desc": "BMJ Case Reports · Zhu, Q. M., Balmaceda, A. M., Lumia, S.,"
-  },
-  {
-   "t": "Type III congenital pulmonary airway malformation with multifocal mucinous metaplasia in a neonate",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e272207?rss=1",
-   "desc": "BMJ Case Reports · Das, P., Dixit, S., Anand, S., Verma, A."
-  },
-  {
-   "t": "Breast cancer metastasis to the gallbladder",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e272383?rss=1",
-   "desc": "BMJ Case Reports · Phun, J., Krause, K., Tsouknidas, I., Lo"
-  },
-  {
-   "t": "Asymmetric presentation of bilateral endogenous endophthalmitis in disseminated Klebsiella pneumoniae infection",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e272495?rss=1",
-   "desc": "BMJ Case Reports · Chanda, U. L., Mirza, M., Baker, D., Abd"
-  },
-  {
-   "t": "Baxters neuropathy presenting as refractory heel pain: diagnostic challenges and treatment with radiofrequency ablation",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e272722?rss=1",
-   "desc": "BMJ Case Reports · Dudiak, G. J., Li, J. J., Shi, W., Annas"
+   "t": "Alpha-gal syndrome presenting with delayed anaphylaxis after pork ingestion",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271878?rss=1",
+   "desc": "BMJ Case Reports · Nishiba, T., Yamamoto, N."
   }
  ],
  "pubmed": [
   {
-   "t": "Folliculitis of probable sexual transmission.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42998923/",
+   "t": "Maculopapular Exanthem Induced by Flecainide: A Case Confirmed by Patch Testing.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43000224/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Pseudotumoral visceral leishmaniasis with ileal involvement and intestinal obstruction in a liver transplant recipient.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42998922/",
+   "t": "Transesophageal Endoscopic Ultrasound With Bronchoscope-Guided Fine-Needle Aspiration for Tissue Diagnosis of Pleural Ma",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43000165/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Patient-Specific Virtual Transesophageal Echocardiography Simulation: A Novel Tool for Perioperative Imaging in Congenit",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42998915/",
+   "t": "Three-dimensional Reconstruction of Membranous Umbilical Vessels from MR Imaging Assists Delivery Planning.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43000135/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Incidental STR profiling during thalassemia screening rescues a normal male fetus from Turner syndrome misdiagnosis foll",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42998867/",
+   "t": "Chest Pain in Vain: Spontaneous Portal Vein Thrombosis.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42999922/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Case Report of Y-Chromosome Mosaicism in Turner Syndrome: Complementary Use of Multiple Genetic Platforms to Resolve a C",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42998820/",
+   "t": "Calcified Appendiceal Phytobezoar Associated With Complicated Acute Appendicitis: A Case Report.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42999920/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Shared care planning. Advance directive.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42998764/",
+   "t": "Ectasia to Ecstatic: A Case Report of Immunoglobulin G4-Related Disease Masquerading as Primary Sclerosing Cholangitis.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/42999918/",
    "desc": "PubMed 最新病例报告"
   }
  ]
