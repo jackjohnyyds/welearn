@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09 12:41 UTC",
+ "updated": "2026-11-10 12:20 UTC",
  "bmj": [
   {
    "t": "Bilateral inflammatory optic neuropathy as a manifestation of immune dysregulation in common variable immunodeficiency",
@@ -27,50 +27,50 @@
    "desc": "BMJ Case Reports · Castro, A. B., Yabut, F. B., Sy, K. H. C"
   },
   {
+   "t": "Unmasking early-morning hypoglycaemia with CGM in multifactorial vertigo: the interplay of recurrent BPPV, orthostatic dysregulation and hypnotic polypharmacy",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271131?rss=1",
+   "desc": "BMJ Case Reports · Kamogashira, T., Ogata, N., Koda, K., Fu"
+  },
+  {
    "t": "Wernickes encephalopathy in an adolescent with avoidant restrictive food intake disorder, juvenile dermatomyositis, attention-deficit hyperactivity disorder, generalised anxiety disorder and a complex psychosocial background",
    "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271668?rss=1",
    "desc": "BMJ Case Reports · Foradori, D. M., Denuit, S., Senitz, T.,"
   },
   {
-   "t": "Mixed acinar adenocarcinoma and small-cell neuroendocrine carcinoma of the prostate with extensive skeletal and nodal metastases and preserved prostate-specific membrane antigen avidity",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271877?rss=1",
-   "desc": "BMJ Case Reports · Sharma, J. O., Bathija, N., Mahajan, R.,"
-  },
-  {
-   "t": "Alpha-gal syndrome presenting with delayed anaphylaxis after pork ingestion",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271878?rss=1",
-   "desc": "BMJ Case Reports · Nishiba, T., Yamamoto, N."
+   "t": "Peripheral facial nerve palsy as the initial presentation of multiple sclerosis",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271729?rss=1",
+   "desc": "BMJ Case Reports · Mughal, H. A., Lind, H."
   }
  ],
  "pubmed": [
   {
-   "t": "Maculopapular Exanthem Induced by Flecainide: A Case Confirmed by Patch Testing.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43000224/",
+   "t": "Cold septic shock: recognising the low-output phenotype.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43003685/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Transesophageal Endoscopic Ultrasound With Bronchoscope-Guided Fine-Needle Aspiration for Tissue Diagnosis of Pleural Ma",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43000165/",
+   "t": "Nonsustained Ventricular Tachycardia in a Patient After Placement of Transjugular Intrahepatic Portosystemic Shunt.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43003635/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Three-dimensional Reconstruction of Membranous Umbilical Vessels from MR Imaging Assists Delivery Planning.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43000135/",
+   "t": "Mediastinal Mass With Recurrent Hemorrhagic Pleural Effusion.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43003634/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Chest Pain in Vain: Spontaneous Portal Vein Thrombosis.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42999922/",
+   "t": "A 63-Year-Old Man With Dyspnea and Loculated Pleural Effusion.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43003633/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Calcified Appendiceal Phytobezoar Associated With Complicated Acute Appendicitis: A Case Report.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42999920/",
+   "t": "Persistent Severe OSA Despite Ongoing CPAP Therapy.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43003632/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Ectasia to Ecstatic: A Case Report of Immunoglobulin G4-Related Disease Masquerading as Primary Sclerosing Cholangitis.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/42999918/",
+   "t": "Bilateral Pulmonary Nodules After Lung Transplantation: A Rare Diagnosis.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43003631/",
    "desc": "PubMed 最新病例报告"
   }
  ]
