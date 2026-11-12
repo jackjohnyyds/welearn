@@ -1,6 +1,11 @@
 {
- "updated": "2026-11-11 11:45 UTC",
+ "updated": "2026-11-12 12:24 UTC",
  "bmj": [
+  {
+   "t": "Gastrointestinal stromal tumour with cystic degeneration mimicking a pancreatic pseudocyst",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e266257?rss=1",
+   "desc": "BMJ Case Reports · Raghareutai, K., Angkathunyakul, N."
+  },
   {
    "t": "Bilateral inflammatory optic neuropathy as a manifestation of immune dysregulation in common variable immunodeficiency",
    "link": "http://casereports.bmj.com/cgi/content/short/19/11/e266562?rss=1",
@@ -27,50 +32,45 @@
    "desc": "BMJ Case Reports · Castro, A. B., Yabut, F. B., Sy, K. H. C"
   },
   {
+   "t": "Partial fundoplication using the remnant stomach for symptomatic, recurrent hiatal hernia after Roux-en-Y gastric bypass",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271108?rss=1",
+   "desc": "BMJ Case Reports · Barcsak, G., Jackson, T., Okrainec, A., "
+  },
+  {
    "t": "Unmasking early-morning hypoglycaemia with CGM in multifactorial vertigo: the interplay of recurrent BPPV, orthostatic dysregulation and hypnotic polypharmacy",
    "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271131?rss=1",
    "desc": "BMJ Case Reports · Kamogashira, T., Ogata, N., Koda, K., Fu"
-  },
-  {
-   "t": "Wernickes encephalopathy in an adolescent with avoidant restrictive food intake disorder, juvenile dermatomyositis, attention-deficit hyperactivity disorder, generalised anxiety disorder and a complex psychosocial background",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271668?rss=1",
-   "desc": "BMJ Case Reports · Foradori, D. M., Denuit, S., Senitz, T.,"
-  },
-  {
-   "t": "Peripheral facial nerve palsy as the initial presentation of multiple sclerosis",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271729?rss=1",
-   "desc": "BMJ Case Reports · Mughal, H. A., Lind, H."
   }
  ],
  "pubmed": [
   {
-   "t": "Exophthalmos Associated With Pathological Dilation of the Sinus Orbitalis in Two Green Iguanas (Iguana iguana).",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43009445/",
+   "t": "Standardized 4-step surgical approach to address atrial fibrillation during coronary artery bypass grafting in a patient",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43016452/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Vagally mediated high-grade atrioventricular block successfully treated with cardioneuroablation in a patient with a rud",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43009435/",
+   "t": "Pelvic HPV-associated squamous cell carcinoma of unknown primary origin: a case report.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43016450/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Type I + III Montgomery Thyroplasty for Post-Cordectomy Dysphonia.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43009417/",
+   "t": "Photothermal foveal injury secondary to accidental alexandrite-laser exposure: a case report and literature review.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43016447/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Bacteriophage associated liver injury in a person with cystic fibrosis and prior liver transplantation.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43009394/",
+   "t": "Case Report: Metachronous colon metastasis of clear-cell renal cell carcinoma seven years after radical nephrectomy.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43016436/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Suspected diarrhea and acute pancreatitis following herpes zoster vaccination.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43009358/",
+   "t": "Phenotypic diversity in Pierson syndrome: a case report of absent microcoria and mild renal progression.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43016262/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Surgical Impact of 3D Reconstruction in Occult Bronchial Atresia.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43009355/",
+   "t": "Early-onset SLC7A9-related cystinuria presenting as a giant bladder stone in a 29-month-old boy: a case report and famil",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43016261/",
    "desc": "PubMed 最新病例报告"
   }
  ]
