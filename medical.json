@@ -1,6 +1,16 @@
 {
- "updated": "2026-11-13 11:59 UTC",
+ "updated": "2026-11-20 12:39 UTC",
  "bmj": [
+  {
+   "t": "Lymphangioma involving the external auditory canal",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e265449?rss=1",
+   "desc": "BMJ Case Reports · Yuan, M., Lim, S."
+  },
+  {
+   "t": "Management of locoregionally recurrent and metastatic meningioma in the head and neck region",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e265683?rss=1",
+   "desc": "BMJ Case Reports · Hsu, M.-Y., Tseng, W.-L., Wang, Y.-J., C"
+  },
   {
    "t": "Gastrointestinal stromal tumour with cystic degeneration mimicking a pancreatic pseudocyst",
    "link": "http://casereports.bmj.com/cgi/content/short/19/11/e266257?rss=1",
@@ -12,65 +22,55 @@
    "desc": "BMJ Case Reports · Karafotias, I., Adas, M., Russell, M., F"
   },
   {
-   "t": "Andersen-Tawil syndrome associated with a subclinical maternal carrier of a KCNJ2 mutation",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e270237?rss=1",
-   "desc": "BMJ Case Reports · Muthukumar, S., Suresh Babu, H. W., Iyer"
+   "t": "Transorbital retained foreign body of the infratemporal fossa presenting as a parotid abscess: an unlikely route of spread",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e266581?rss=1",
+   "desc": "BMJ Case Reports · Sharma, M., Varshney, A., Bhardwaj, A., "
   },
   {
-   "t": "Symptomatic plateau waves in a patient with leptomeningeal metastases captured with quantitative electroencephalography and intracranial pressure monitoring",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e270251?rss=1",
-   "desc": "BMJ Case Reports · Gopinath, K., Renteria, I., Probelsky, S"
+   "t": "Stabilisation of chronic proximal tibiofibular joint instability using a semitendinosus autograft",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e267633?rss=1",
+   "desc": "BMJ Case Reports · Jayan, A. K., Jain, G., Karaniveed Puthi"
   },
   {
-   "t": "Case of post-transplant lymphoproliferative disorder presenting as EBV-negative intravascular large B-cell lymphoma",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e270491?rss=1",
-   "desc": "BMJ Case Reports · Kahandawala Arachchige, N. K., Mushtaq, "
+   "t": "Acute cholecystitis 12 years after subtotal cholecystectomy",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e268126?rss=1",
+   "desc": "BMJ Case Reports · Gray, S., Schmidt, T., Klement, A."
   },
   {
-   "t": "Concurrent xanthogranulomatous lesions of the lower urinary tract",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e270732?rss=1",
-   "desc": "BMJ Case Reports · Castro, A. B., Yabut, F. B., Sy, K. H. C"
-  },
-  {
-   "t": "Partial fundoplication using the remnant stomach for symptomatic, recurrent hiatal hernia after Roux-en-Y gastric bypass",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271108?rss=1",
-   "desc": "BMJ Case Reports · Barcsak, G., Jackson, T., Okrainec, A., "
-  },
-  {
-   "t": "Unmasking early-morning hypoglycaemia with CGM in multifactorial vertigo: the interplay of recurrent BPPV, orthostatic dysregulation and hypnotic polypharmacy",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e271131?rss=1",
-   "desc": "BMJ Case Reports · Kamogashira, T., Ogata, N., Koda, K., Fu"
+   "t": "Acne fulminans with systemic symptoms precipitated by anabolic-androgenic steroid use",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e268232?rss=1",
+   "desc": "BMJ Case Reports · Macdonald, I., Fostier, W., Alexander, M"
   }
  ],
  "pubmed": [
   {
-   "t": "Case Report: Combined palatal augmentation and palatal lift prostheses for dysarthria and dysphagia in oculopharyngeal m",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43022079/",
+   "t": "Fibrodysplasia Ossificans Progressiva (FOP) in a Pediatric Patient With Familial Transmission-A Rare Genetic Disorder Wi",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43059284/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Lacrimal gland adenoid cystic carcinoma: a rare case report.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43022068/",
+   "t": "Osteopathic manipulative treatment in resolving post-stroke depression: a case report.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43059268/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Improvement of burning mouth syndrome associated with Sjögren syndrome following treatment with nemolizumab.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43022053/",
+   "t": "Analytical validation of an in-house CSF neurogranin assay for clinical use.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43059210/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Case Report: Urachal abscess complicated by interloop abscess.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43022013/",
+   "t": "Beating-heart pulmonary arteriotomy under cardiopulmonary bypass for heartworm extraction in three dogs without caval sy",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43059157/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Successful non-operative management of wound dehiscence after PSARP: case report.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43021989/",
+   "t": "Culture-Negative Neutrophilic Meningitis Followed by Suboccipital Abscess and Sepsis: A Case Report.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43059154/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Presumed cytomegalovirus retinitis as the initial infectious manifestation of previously unrecognized Good syndrome in a",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43021982/",
+   "t": "Rheumatoid meningitis presenting with gait disturbance and urinary symptoms in a patient without a prior diagnosis of rh",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43059121/",
    "desc": "PubMed 最新病例报告"
   }
  ]
