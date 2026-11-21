@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 12:39 UTC",
+ "updated": "2026-11-21 12:20 UTC",
  "items": [
   {
    "t": "I followed Beatrix Potter's routine (cosy day in English Countryside)",
@@ -20,7 +20,7 @@
    "cat": "科技",
    "src": "englio·B2",
    "link": "https://englio.ai/article/d877842a-c35f-4a64-9b7e-4362a6a71586",
-   "zh": "在随机性中寻找π：三种数学方法"
+   "zh": "在随机性中寻找圆周率：三种数学方法"
   },
   {
    "t": "GPS Spoofing in the Strait of Hormuz: A Navigation Crisis",
@@ -48,14 +48,14 @@
    "cat": "科技",
    "src": "englio·C1",
    "link": "https://englio.ai/article/d8a738a0-a9a6-4a5d-986f-c05a607ae076",
-   "zh": "数学家通过人工智能发现的结构统一了数百年的圆周率公式"
+   "zh": "数学家通过人工智能发现的结构统一了数百年来各种圆周率公式"
   },
   {
    "t": "Raccoons Solve Puzzles for Fun: Study Reveals Information Foraging Behavior",
    "cat": "科技",
    "src": "englio·B2",
    "link": "https://englio.ai/article/2339c72d-2e5a-4d88-9a0a-e161ac56a55b",
-   "zh": "研究揭示浣熊的觅食行为：它们为了娱乐而解谜"
+   "zh": "研究揭示浣熊的觅食行为：它们为了娱乐而解谜题"
   },
   {
    "t": "The Mystery of the Runaway Black Hole",
@@ -69,7 +69,7 @@
    "cat": "其他",
    "src": "englio·B2",
    "link": "https://englio.ai/article/14b76704-74c0-47f1-a4f1-4c638517b1bb",
-   "zh": "为什么星期五逢13号是数学上的必然性？"
+   "zh": "为什么星期五逢13号是数学上的必然性"
   },
   {
    "t": "AI and Robots Revolutionize Biological Experimentation",
@@ -83,7 +83,7 @@
    "cat": "环境",
    "src": "englio·B2",
    "link": "https://englio.ai/article/e78a1c14-87e2-4a7b-9a7f-46b9678c3c8e",
-   "zh": "美国冬季创高温纪录与气候变化的影响"
+   "zh": "美国冬季创纪录高温与气候变化影响"
   }
  ]
 }
