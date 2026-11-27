@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 13:40 UTC",
+ "updated": "2026-11-27 13:38 UTC",
  "bmj": [
   {
    "t": "Lymphangioma involving the external auditory canal",
@@ -10,6 +10,11 @@
    "t": "Management of locoregionally recurrent and metastatic meningioma in the head and neck region",
    "link": "http://casereports.bmj.com/cgi/content/short/19/11/e265683?rss=1",
    "desc": "BMJ Case Reports · Hsu, M.-Y., Tseng, W.-L., Wang, Y.-J., C"
+  },
+  {
+   "t": "Primary clavicular leiomyosarcoma: surgical insight and outcome",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e265782?rss=1",
+   "desc": "BMJ Case Reports · Sanjekar, V. R., Thakur, R., SKS, M., Gu"
   },
   {
    "t": "Gastrointestinal stromal tumour with cystic degeneration mimicking a pancreatic pseudocyst",
@@ -27,50 +32,45 @@
    "desc": "BMJ Case Reports · Sharma, M., Varshney, A., Bhardwaj, A., "
   },
   {
+   "t": "Natural killer cell lymphoproliferative disorder in the context of Crohns disease: diagnostic challenges",
+   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e267281?rss=1",
+   "desc": "BMJ Case Reports · Kek, L., Coelho-Prabhu, N., Bennani, N.,"
+  },
+  {
    "t": "Stabilisation of chronic proximal tibiofibular joint instability using a semitendinosus autograft",
    "link": "http://casereports.bmj.com/cgi/content/short/19/11/e267633?rss=1",
    "desc": "BMJ Case Reports · Jayan, A. K., Jain, G., Karaniveed Puthi"
-  },
-  {
-   "t": "Acute cholecystitis 12 years after subtotal cholecystectomy",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e268126?rss=1",
-   "desc": "BMJ Case Reports · Gray, S., Schmidt, T., Klement, A."
-  },
-  {
-   "t": "Acne fulminans with systemic symptoms precipitated by anabolic-androgenic steroid use",
-   "link": "http://casereports.bmj.com/cgi/content/short/19/11/e268232?rss=1",
-   "desc": "BMJ Case Reports · Macdonald, I., Fostier, W., Alexander, M"
   }
  ],
  "pubmed": [
   {
-   "t": "Case Report: Acute pulmonary embolism complicating tracheobronchial tuberculosis: a case series of five patients.",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43094711/",
+   "t": "Gel Immersion-Assisted Biliary Cannulation via the Native Papilla During Balloon Endoscopy-Assisted ERCP in Surgically A",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43100237/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Case Report: Early Chinese experience with caplacizumab for plasma-exchange-refractory immune-mediated TTP and a focused",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43094699/",
+   "t": "Point of Care Lung Ultrasound for Diagnosis and Monitoring of Tuberculous Pleural Effusion: A Case Report and a Literatu",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43100234/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Digital simulation and 3D-printed guide-assisted surgical correction of a complex pediatric hip deformity: a case report",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43094673/",
+   "t": "Allergic Contact Dermatitis Following Use of an At-Home Nail Kit.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43100175/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Case Report: Interlaminar approach for unilateral biportal endoscopy of a thoracolumbar intervertebral disc extrusion in",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43094654/",
+   "t": "Rapidly progressive paraplegia due to a conus medullaris cavernous malformation with irreversible neurological deficits:",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43100097/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Case Report: Severe neonatal-onset chronic granulomatous disease associated with biallelic copy-number loss encompassing",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43094592/",
+   "t": "Intermediate-grade melanocytic meningeal neoplasm of the thoracic spine.",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43100096/",
    "desc": "PubMed 最新病例报告"
   },
   {
-   "t": "Case Report: Suspected intestinal helminthiasis on CT despite negative stool microscopy in a man experiencing homelessne",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/43094589/",
+   "t": "The Superior Epigastric Artery Perforator (SEAP) Flap: A Targeted Approach for Lower Inner Quadrant Breast-Conserving On",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/43100083/",
    "desc": "PubMed 最新病例报告"
   }
  ]
